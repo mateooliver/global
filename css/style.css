@@ -1,0 +1,112 @@
+html{
+    font-family: 'Nunito', sans-serif;
+    background-color: rgba(244, 244, 244, 0.1s);
+}
+.background{
+    background-image: url("../img/background.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.display{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+.backgroundBtn{
+    height: 78px;
+    width: 256px;
+    background: linear-gradient(0.25turn, #826ad7, #98def3);
+
+}
+.backgroundBtn:hover{
+    background: linear-gradient(0.25turn, #826ad7, #98def3);
+    filter: drop-shadow(10px 5px 5px #7d97f4);
+   
+}
+.backgroundBtn:active{
+    background: linear-gradient(0.25turn, #5e3fcc, #2989a6);
+
+}
+.inputs::placeholder{
+    color: #69828a;
+}
+.input{
+    margin: auto;
+    width: 25vw;
+}
+
+
+.imagen{
+
+    height: 100vh;
+}
+.info{
+    background: none;
+    max-width: 80vw;
+    text-align: center;
+    margin: 10%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-self: center;
+    align-items: center;
+}
+.device{
+    max-width: 20vw;
+    display: flex;
+   flex-direction: row;
+   flex-wrap:nowrap;
+}
+.user{
+    margin: auto;
+    height: 20vh;
+    width: auto;
+}
+.resizePic{
+    height: 60vh;
+    width: 20vw;
+}
+.pregunta{
+    color:#616161;
+    font:400;
+}
+@keyframes Animation {
+ 0.0%{
+ transform: translate(50%, 50%);
+}
+100%{
+transform: scale(1) translate(50%, 25%) skew(0deg);
+}
+    }
+
+.move{
+    animation: Animation 0.5s ease-in 0.1s 1 normal both;
+    }
+
+
+/* mobile */
+@media (max-width: 700px) {
+    .background{
+        background: none;
+    }
+   
+    .display{
+        width: 80vw;
+    }
+    .device{
+        max-width: 80vw;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .center{
+        text-align: center;
+    }
+    .input{
+        margin: auto;
+        width: 60vw;
+    }
+
+}
+
+  
