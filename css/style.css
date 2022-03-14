@@ -100,7 +100,9 @@ transform: scale(1) translate(50%, 20%) skew(0deg);
     }
    
     .display{
-        width: 90vw;
+        display: block;
+        margin: auto;
+       
     }
     .device{
         max-width: 80vw;
@@ -124,7 +126,7 @@ transform: scale(1) translate(50%, 20%) skew(0deg);
         padding: 15px;
         width: fit-content;
     }
-    .move{
+    .fotoMove{
         display: none;
     }
     .info{
