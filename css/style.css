@@ -113,6 +113,9 @@ transform: scale(1) translate(50%, 20%) skew(0deg);
     .center{
         text-align: center;
     }
+    .deviceInput{
+        margin-top: -50vh ;
+    }
     .input{
         margin: auto;
         width: 60vw;
@@ -128,6 +131,9 @@ transform: scale(1) translate(50%, 20%) skew(0deg);
     }
     .fotoMove{
         display: none;
+    }
+    .user{
+        margin-top: 7vh;
     }
     .info{
         display: grid;
