@@ -14,8 +14,13 @@ html{
    
 }
 .backgroundBtn{
-    height: 78px;
-    width: 256px;
+    height: 7vh;
+    width: 12vw;
+    color: white;
+    border-style: none;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 20px;
     background: linear-gradient(0.25turn, #826ad7, #98def3);
 
 }
@@ -32,24 +37,23 @@ html{
     color: #69828a;
 }
 .input{
+   
     margin: auto;
     width: 25vw;
 }
-
-
-.imagen{
-
-    height: 100vh;
+.inputs{
+    color:#826ad7;
+    font-weight: 500;
 }
+
 .info{
     background: none;
     max-width: 80vw;
     text-align: center;
     margin: 10%;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    justify-self: center;
-    align-items: center;
+    grid-template-rows: 0.3fr 1fr 1fr;
+
 }
 .device{
     max-width: 20vw;
@@ -57,25 +61,30 @@ html{
    flex-direction: row;
    flex-wrap:nowrap;
 }
+.logo{
+    margin-top: -35px;
+    width: 13vw;
+}
 .user{
+    justify-self: flex-end;
     margin: auto;
     height: 20vh;
     width: auto;
 }
 .resizePic{
-    height: 60vh;
-    width: 20vw;
+    height: 70vh;
+    width: auto;
 }
 .pregunta{
     color:#616161;
-    font:400;
+    font-weight:400;
 }
 @keyframes Animation {
  0.0%{
  transform: translate(50%, 50%);
 }
 100%{
-transform: scale(1) translate(50%, 25%) skew(0deg);
+transform: scale(1) translate(50%, 20%) skew(0deg);
 }
     }
 
