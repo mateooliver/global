@@ -62,8 +62,8 @@ html{
    flex-wrap:nowrap;
 }
 .logo{
-    margin-top: -35px;
-    width: 12vw;
+    
+    width: 13vw;
 }
 .user{
     justify-self: flex-end;
@@ -113,9 +113,7 @@ transform: scale(1) translate(50%, 20%) skew(0deg);
     .center{
         text-align: center;
     }
-    .deviceInput{
-        margin-top: -50vh ;
-    }
+
     .input{
         margin: auto;
         width: 60vw;
