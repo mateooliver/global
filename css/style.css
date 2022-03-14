@@ -63,7 +63,7 @@ html{
 }
 .logo{
     margin-top: -35px;
-    width: 13vw;
+    min-width: 13vw;
 }
 .user{
     justify-self: flex-end;
@@ -100,7 +100,7 @@ transform: scale(1) translate(50%, 20%) skew(0deg);
     }
    
     .display{
-        width: 80vw;
+        width: 90vw;
     }
     .device{
         max-width: 80vw;
@@ -114,6 +114,23 @@ transform: scale(1) translate(50%, 20%) skew(0deg);
     .input{
         margin: auto;
         width: 60vw;
+    }
+    .logo{
+        justify-items: center;
+        margin: 10px;
+        width: 70vw;
+    }
+    .boton{
+        padding: 15px;
+        width: fit-content;
+    }
+    .move{
+        display: none;
+    }
+    .info{
+        display: grid;
+        grid-row: 0.5fr 1fr 1fr;
+        justify-content: center;
     }
 
 }
