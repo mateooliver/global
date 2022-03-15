@@ -94,10 +94,13 @@ transform: scale(1) translate(50%, 20%) skew(0deg);
 .logoDevice{
         display: none;
     }
+
 /* mobile */
 @media (max-width: 700px) {
     .background{
         background: none;
+    }
+    .backgroundMobile{
         background-image: url("/img/backgroundMobile.png");
         background-position: center -5vh;
         background-size: cover;
@@ -126,7 +129,7 @@ transform: scale(1) translate(50%, 20%) skew(0deg);
     }
 /* achica la imagen del usuario */
     .user{
-      height: 40vw;
+      height: 30vw;
       width: auto;
   }
 /* Edicion boton */
