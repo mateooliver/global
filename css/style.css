@@ -91,11 +91,18 @@ transform: scale(1) translate(50%, 20%) skew(0deg);
     animation: Animation 0.5s ease-in 0.1s 1 normal both;
     }
 
-
+.logoDevice{
+        display: none;
+    }
 /* mobile */
 @media (max-width: 700px) {
     .background{
         background: none;
+        background-image: url("/img/backgroundMobile.png");
+        background-position: center -5vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vw;
     }
    
     .display{
@@ -112,27 +119,52 @@ transform: scale(1) translate(50%, 20%) skew(0deg);
     .center{
         text-align: center;
     }
-
+/* achica los input */
     .input{
         margin: auto;
         width: 60vw;
     }
-    .logo{
-        justify-items: center;
-        margin-top: 10px;
-        width: 70vw;
-    }
+/* achica la imagen del usuario */
+    .user{
+      height: 40vw;
+      width: auto;
+  }
+/* Edicion boton */
     .boton{
         padding: 15px;
         width: fit-content;
     }
+/* imagen moviendose  animada*/
+    .move{ 
+        margin-top: -15px;
+        width: 20vw;
+        height: auto;
+        animation: Animation 0.5s ease 0.1s 1 normal both;
+    }
     .fotoMove{
+        margin: auto;
+    }
+/* animacion */
+    @keyframes Animation {
+        0.0%{
+            transform: scale(0.5) translate(0vw, 6vw);
+       }
+       100%{
+            transform: scale(1) translate(40vw, 6vw) skew(0deg);
+       }
+           }
+    /* Reposicion del logo abajo */
+    .logo{
         display: none;
     }
-    .user{
-        margin-top: 7vh;
+    .logoDevice{
+        display: block;
+        margin-top: 2vh;
+        width: 40vw;
     }
+    /* Container grid del user y los inputs */
     .info{
+        margin-top: 15vh;
         display: grid;
         grid-row: 0.5fr 1fr 1fr;
         justify-content: center;
