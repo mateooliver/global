@@ -101,7 +101,7 @@ transform: scale(1) translate(50%, 20%) skew(0deg);
         background: none;
     }
     .backgroundMobile{
-        background-image: url("/img/backgroundMobile.png");
+        background-image: url("../img/backgroundMobile.png");
         background-position: center -5vh;
         background-size: cover;
         background-repeat: no-repeat;
