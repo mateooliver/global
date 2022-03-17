@@ -1,0 +1,130 @@
+html{
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(244, 244, 244, 0.5);
+}
+
+.background3{
+height: 100vh;
+width: auto;
+overflow: hidden;
+background-image: url("../img/background3.png");
+background-size:cover;
+background-repeat: no-repeat;
+
+}
+
+.divisionPantalla{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+.ladoIzquierdo{
+    overflow:scroll;
+    min-width:400px ;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.sobre{
+    height: 60vh;
+}
+/* animacion cuando solo hay imagen */
+@keyframes Animation {
+    0.0%{
+    transform: translate(50%, 50%);
+   }
+   100%{
+   transform: scale(1) translate(50%, 20%) skew(0deg);
+   }
+       }
+
+/* Animacion para cuando hay imagen y texto */
+@keyframes Animation2 {
+        0.0%{
+        transform: translate(50%, 50%);
+       }
+       100%{
+       transform: scale(1) translate(50%, 10%) skew(0deg);
+       }
+           }
+       
+.move{
+    justify-self: center;
+    align-self: center;
+    animation: Animation 1s ease-in 0.1s 1 normal both;
+       }
+   
+.moveMasALto{
+    justify-self: center;
+    align-self: center;
+    animation: Animation2 1s ease-in 0.1s 1 normal both;
+}
+
+.textIzquierdo{
+    justify-self: start;
+    align-self: flex-end;
+    width: 30%;
+    min-width: 400px;
+    margin: 0vh 0 2vw 3vw;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.3vh;
+    text-align: center;
+    color: #353C73;
+    
+   }
+.ladoDerecho{
+    overflow: scroll;
+    min-width: 300px;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20% 40% 40%;
+ 
+}
+.ladoDerecho div{
+    min-width: 80%;
+}
+.logo{
+    align-self:center ;
+    justify-self: center;
+
+}
+.containerMiddle{
+    margin: auto;
+    
+}
+.emailLogo{
+    margin: 0 0 2% 40%;
+    width: 20%;
+    height: auto;
+}
+
+.pregunta2{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+    color: #616161;
+}
+
+.centrarBoton{
+    margin: 10% 0 0 40% ;
+}
+
+/* pagina 4 */
+.background4{
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    background-image: url("../img/background4.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+ }
+  
+.img4{
+    margin: 0 0 0 -10vw;
+    height: 70vh;
+    width: auto;
+}

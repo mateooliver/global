@@ -34,9 +34,6 @@ html{
         opacity: 0;
     }
 }
-    
-    
-    /* Add the animation: property to whichever element you want to animate */
     .Animate{
     animation: yourAnimation 2s ease 0s 1 normal forwards;
     }
@@ -78,7 +75,7 @@ html{
   margin: 3vw 0 0 3vw;
 }
 
-.boton{
+.botonRegistrar{
     margin: 10vw 0vw 0vw 7vw;
     height: 7vh;
     width: 12vw;
@@ -91,11 +88,11 @@ html{
     text-align: center;
     color: #FFFFFF;
 } 
-.boton:hover{
+.botonRegistrar:hover{
 box-shadow: 7px 7px 25px #4FBCF1;}
-.boton:active{
+.botonRegistrar:active{
     background: linear-gradient(0.25turn, #5e3fcc, #2989a6);
 }
-.boton::after{
+.botonRegistrar::after{
     background: linear-gradient(0.25turn, #5e3fcc, #2989a6);
 }
