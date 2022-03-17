@@ -2,38 +2,31 @@ html{
         font-family: 'Nunito', sans-serif;
         background-color: rgb(244, 244, 244, 0.5);
 }
-.fondoIzq{
-    overflow: hidden;
-    height: 100vh;
-    width: auto;
-    background-image: url("../img/Intro_01Iz.png");
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: left;
-}
-.fondoDer{
 
-    overflow: hidden;
+.backgroundBienvenida{
     height: 100vh;
     width: auto;
-    background-image: url("../img/fondoDer.png");
-    background-size:auto;
+    overflow: hidden;
+    background-image: url("../img/backgroundBienvenida.png");
+    background-size:cover;
     background-repeat: no-repeat;
-    background-position: right;
+
 }
+
 .divisionPantalla{
+    overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .cohete{
-
+    overflow:auto;
     margin: 49.9vh 0 0 10vh;
     height: 50vh;
 }
 /* Copy this @keyframes block to your CSS*/
 @keyframes yourAnimation {
     0.0%{
-        transform: translate(0, 0vh);
+        transform: translate(0, -10vh);
         opacity: 1;
     }
     100%{
