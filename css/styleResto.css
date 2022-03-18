@@ -158,3 +158,37 @@ grid-template-columns: 1fr 1fr;
      overflow: scroll;
     
  }
+
+ /* Pagina 8 crear un dominio */
+ .background8{
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    background-image: url("../img/background8.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+ }
+ .inputURL{
+
+     margin: auto;
+     width:80%;
+     height: 50px;
+     border: 2px solid, #836ED8 ;
+     border-radius: 50px;
+     color: #836ED8;
+ }
+ .felicitaciones{
+    justify-self: end;
+    align-self: end;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.5vw;
+    line-height: 74.69%;
+    text-align: center;
+    color: #4D53D9;
+ }
+ .signoExclamacion{
+    font-size: 13vw;
+
+ }
