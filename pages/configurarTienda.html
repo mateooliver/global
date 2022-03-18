@@ -16,46 +16,42 @@
     <link href="../css/styleResto.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
 </head>
-<body class=" background4  ">
+<body class=" background5  ">
     <section>
         <div class="container-fluid divisionPantalla">
             <!-- Lado izquierdo -->
             <div class="">
-                <div ><img id="imagen" class="img-fluid img4 move" src="../img/img4.png" alt=""></div>
+                <div ><img id="imagen" class="img-fluid img4 move" src="../img/img6.png" alt=""></div>
             </div>
-            <!-- Lado derecho -->
+
+            <!-- Lado derecho - grid con 3 sections-->
             <div class="ladoDerecho ">
+                <!-- seccion 1 -->
                     <img id="logo" class="logo" src="../img/logo360.png" alt="logo">
+                <!-- seccion 2 -->
                 <div class="containerMiddle">
-                    <img id="" class="emailLogo" src="../img/icon4.png" alt="emailLogo">
-                    <div id="" class="pregunta2">¿Cuentas con un logo para configurar tu sistema?</div>
+                    <img id="" class="tiendaLogo" src="../img/icon6.png" alt="emailLogo">
+                    <div id="" class="pregunta2 container-fluid col-9">¿Quieres configurar tu tienda ahora?</div>
                 </div>
-                    
+                <!-- seccion 3 -->    
                     <form action="#"  class="mx-auto">
                 
                         <div style="display:flex"  >
                         
                         <label class="mx-3">
                             <input id="siLogo" name="group1" type="radio" />
-                            <span>Si</span>
+                            <span><p class="pregunta2">Si</p></span>
                         </label>
                         
                         
                         <label class="mx-3">
                             <input class="noLogo" name="group1" type="radio" />
-                            <span>No</span>
-                        </label>
-                        
-                        
-                        <label class="mx-3">
-                            <input class="with-gap noLogo" name="group1" type="radio"  />
-                            <span>Configurar luego</span>
+                            <span> <p class="pregunta2">Luego</p></span>
                         </label>
                        
                     </div>
-                    <div class="center py-4" style="display: grid; grid-template-rows: max-content;" >
-                         <input id="upFile" type="file" style="display: none;"/>
-                        <a class="py-4" href="../pages/tienda01.html"><button type="button" style="display: none;" id="siguiente" class="backgroundBtn  boton ">Siguiente</button></a>
+                
+                        <a class="py-4" href="../pages/estiloTienda7.html"><button type="button" id="siguiente" class="backgroundBtn  boton  my-5">Siguiente</button></a>
                     </div>
                 </form>
                 </div>
@@ -67,16 +63,6 @@
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
          
-     <script>
-
-         $("#siLogo").click(()=>{
-            $("#upFile").show()
-            $("#siguiente").fadeIn()
-         })
-         $(".noLogo").click(()=>{
-            $("#upFile").hide()
-            $("#siguiente").fadeIn()
-         })
-     </script>
+    
 </body>
 </html>

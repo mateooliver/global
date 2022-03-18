@@ -128,3 +128,33 @@ grid-template-columns: 1fr 1fr;
     height: 70vh;
     width: auto;
 }
+
+/* pagina 5 */
+.background5{
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    background-image: url("../img/background5.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+ }
+ .tiendaLogo{
+    margin: 0 0 1.5% 35%;
+    width: 35%;
+    height: auto;
+ }
+ .mouseCarousel{
+     transform: scale(95%);
+ }
+ .mouseCarousel:hover{
+     overflow: hidden;
+    transform: scale(100%);
+ }
+ .galeria{
+     max-width: 90%;
+     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+     overflow: scroll;
+    
+ }
