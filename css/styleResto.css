@@ -178,8 +178,7 @@ grid-template-columns: 1fr 1fr;
      color: #836ED8;
  }
  .felicitaciones{
-    justify-self: end;
-    align-self: end;
+
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
@@ -192,3 +191,4 @@ grid-template-columns: 1fr 1fr;
     font-size: 13vw;
 
  }
+ /* pagina 9 felicitaciones */
