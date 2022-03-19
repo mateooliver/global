@@ -97,28 +97,106 @@ transform: scale(1) translate(50%, 20%) skew(0deg);
 
 /* mobile */
 @media (max-width: 700px) {
-    .background{
-        background: none;
-    }
-    .backgroundMobile{
+        /* pagina inicio  */
+  /* background */
+    .backgroundMobil{
+        overflow: auto;
+        background-color: rgba(244, 244, 244, 0.1);
         background-image: url("../img/backgroundMobile.png");
-        background-position: center -5vh;
-        background-size: cover;
+        background-position: center;
+        background-size: contain;
         background-repeat: no-repeat;
         height: 50vw;
     }
    
-    .display{
+    /* division de pantalla en movil */
+    .divisionPantalla{
+        display: block;
+    }
+    .bienvenidoGrid{
+        display: block;
+    }
+
+    /* componentes */
+    .bienvenidoMobile{
+        margin-top: 80vw;
+        text-align: center;
+        font-size: 15vw;
+    }
+    .botonMovil{
+        margin:20% 0 0 35%;
+        width: fit-content;
+    } 
+    .nubes{
+        background: none;
+    }
+  
+    @keyframes yourAnimation {
+   0.0%{
+    transform: translate(0, 45vh);
+  }100%{
+    transform: translate(0,-50vh);}
+    }
+    .coheteMobile{
+        margin: auto;
+        animation: yourAnimation 1.5s ease 0s 1 normal both;
+    }
+    .cohete{
+        display: none;
+    }
+   .genial{
+    margin: auto;
+    font-size: 25vw;
+   }
+
+   /*  pagina 3 email */
+   .ladoIzquierdo{
+    display:unset;
+   }
+   .sobre{
+     display: none;
+   }
+   .textIzquierdo{
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    padding: 9px;
+   }
+.ladoDerecho{
+    display: unset;
+}
+.containerMiddle{
+    margin-top: 45%;
+}
+
+/* pagina 4 logo */
+.alignMobileDots{
+    margin:10% 0 0 10%;
+}
+
+/* pagina 5 tienda01 */
+.alignMobileDots2{
+    margin: 10% 0 0 25%;
+}
+/* pagina 6 ConfigurarTienda */s
+
+
+
+
+
+
+
+.display{
         display: block;
         margin: auto;
-       
     }
-    .device{
+.device{
         max-width: 80vw;
         display: grid;
         grid-template-columns: auto;
         justify-content: center;
     }
+    
     .center{
         text-align: center;
     }

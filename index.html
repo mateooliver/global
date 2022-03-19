@@ -14,21 +14,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="../css/styleResto.css" rel="stylesheet">
     <link href="./css/introStyle.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/style.css"  rel="stylesheet">
 </head>
-<body class=" backgroundBienvenida  img-fluid">
+<body class=" backgroundBienvenida backgroundMobil img-fluid">
     <section class=" ">
-        <div class="divisionPantalla">
+        <div class="divisionPantalla  ">
             <div id="nubes" class="nubes">
-                <img id="cohete" class="img-fluid cohete animate__animated animate__slideInUp" src="./img/cohete.png" alt="">
+                <img id="cohete" class="img-fluid cohete coheteMobile" src="./img/cohete.png" alt="">
+                <div></div>
             </div>
             <div class="bienvenidoGrid ">
                 <div>
-                    <div id="bienvenido" class="bienvenido">Bienvenido a</div>
+                    <div id="bienvenido" class="bienvenido bienvenidoMobile">Bienvenido a</div>
                     <div id="gracias" class="genial" style="display: none;"><p >¡Genial!</p></div>
                     <img id="logo" class="logo360Bienvenido" src="./img/logo360.png" alt="logo">
                 </div>
-                <button id="registrate" class="botonRegistrar mx-auto">Registrate</button>
+                <button id="registrate" class="botonRegistrar   botonMovil">Registrate</button>
             </div>
 
         </div>
@@ -36,10 +37,11 @@
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-  
+
         $("#registrate").click(()=> {
+            $("#cohete").show( "cohete" )
+            $("#cohete").show( "coheteMobile" )
             $("#cohete").addClass( "Animate" )
-            $("#nubes").removeClass("nubes")
              $("#bienvenido").hide("fast")
              $("#logo").hide("fast")
              $("#registrate").hide("fast")

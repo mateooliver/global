@@ -38,6 +38,7 @@ html{
     animation: yourAnimation 2s ease 0s 1 normal forwards;
     }
 .nubes{
+   
     background-image: url("../img/Nubes.png");
     background-size: contain;
     background-repeat: no-repeat;
