@@ -65,7 +65,7 @@ grid-template-columns: 1fr 1fr;
     align-self: flex-end;
     width: 30%;
     min-width: 400px;
-    margin: 0vh 0 2vw 3vw;
+    margin:10vh 0 3vw 3vw;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 500;
@@ -91,13 +91,7 @@ grid-template-columns: 1fr 1fr;
 
 }
 .containerMiddle{
-    margin: auto;
-    
-}
-.emailLogo{
-    margin: 0 0 2% 40%;
-    width: 20%;
-    height: auto;
+    margin-top: 20vh;
 }
 
 .pregunta2{
@@ -109,9 +103,6 @@ grid-template-columns: 1fr 1fr;
     color: #616161;
 }
 
-.centrarBoton{
-    margin: 10% 0 0 40% ;
-}
 
 /* pagina 4 */
 .background4{
@@ -138,11 +129,7 @@ grid-template-columns: 1fr 1fr;
     background-size:cover;
     background-repeat: no-repeat;
  }
- .tiendaLogo{
-    margin: 0 0 1.5% 35%;
-    width: 35%;
-    height: auto;
- }
+ 
  .mouseCarousel{
      transform: scale(95%);
  }
@@ -151,13 +138,16 @@ grid-template-columns: 1fr 1fr;
     transform: scale(100%);
  }
  .galeria{
+     margin: auto;
      max-width: 90%;
      display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-     overflow: scroll;
-    
+     overflow: scroll;  
  }
+ .containerMiddleTienda{
+    margin-top: 18vh;
+}
 
  /* Pagina 8 crear un dominio */
  .background8{
@@ -177,6 +167,7 @@ grid-template-columns: 1fr 1fr;
      border-radius: 50px;
      color: #836ED8;
  }
+ /* pagina Felicitaciones */
  .felicitaciones{
 
     font-family: 'Nunito';

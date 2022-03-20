@@ -2,17 +2,13 @@ html{
     font-family: 'Nunito', sans-serif;
     background-color: rgba(244, 244, 244, 0.1s);
 }
-.background{
-    background-image: url("../img/background.png");
-    background-size:cover;
-    background-repeat: no-repeat;
+
+.boton{
+    position: absolute;
+    top: 80vh;
+    left: 68vw;
 }
 
-.display{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-   
-}
 .backgroundBtn{
     height: 7vh;
     width: 12vw;
@@ -33,27 +29,26 @@ html{
     background: linear-gradient(0.25turn, #5e3fcc, #2989a6);
 
 }
+.icon{
+    position: absolute;
+    height: 18%;
+    width: auto;
+    left: 71vw;
+    top: 18vh;
+}
 .inputs::placeholder{
     color: #69828a;
 }
+.inputInline{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 .input{
-   
-    margin: auto;
-    width: 25vw;
+    max-width: 90%;
 }
 .inputs{
     color:#826ad7;
     font-weight: 500;
-}
-
-.info{
-    background: none;
-    max-width: 80vw;
-    text-align: center;
-    margin: 10%;
-    display: grid;
-    grid-template-rows: 0.3fr 1fr 1fr;
-
 }
 .device{
     max-width: 20vw;
@@ -64,36 +59,11 @@ html{
 .logo{
     width: 13vw;
 }
-.user{
-    justify-self: flex-end;
-    margin: auto;
-    height: 20vh;
-    width: auto;
-}
-.resizePic{
-    height: 70vh;
-    width: auto;
-}
-.pregunta{
-    color:#616161;
-    font-weight:400;
-}
-@keyframes Animation {
- 0.0%{
- transform: translate(50%, 50%);
-}
-100%{
-transform: scale(1) translate(50%, 20%) skew(0deg);
-}
-    }
-
-.move{
-    animation: Animation 0.5s ease-in 0.1s 1 normal both;
-    }
 
 .logoDevice{
         display: none;
     }
+
 
 /* mobile */
 @media (max-width: 700px) {
@@ -123,14 +93,41 @@ transform: scale(1) translate(50%, 20%) skew(0deg);
         text-align: center;
         font-size: 15vw;
     }
+    .botonRegistrar{
+        margin:-10vw 0vw 0vw -7vw;
+    }
     .botonMovil{
-        margin:20% 0 0 35%;
+        display: block;
+        position: absolute;
+        top:72vh;
+        left: 37vw;
         width: fit-content;
     } 
     .nubes{
         background: none;
     }
+
+  /* animacion para todas las pages */
+  @keyframes Animation {
+    0.0%{
+        transform: scale(0.5) translate(0vw, 6vw);
+   }
+   100%{
+        transform: scale(1) translate(40vw, 2vw) skew(0deg);
+   }
+       }
+    .moveMobil{ 
+        margin-top: -15px;
+        width: 30vw;
+        height: auto;
+        animation: Animation 0.5s ease 0.1s 1 normal both;
+    }
+    .fotoMove{
+        margin: auto;
+    }
+
   
+     /* animacion del intro */
     @keyframes yourAnimation {
    0.0%{
     transform: translate(0, 45vh);
@@ -141,9 +138,11 @@ transform: scale(1) translate(50%, 20%) skew(0deg);
         margin: auto;
         animation: yourAnimation 1.5s ease 0s 1 normal both;
     }
+
     .cohete{
         display: none;
     }
+   
    .genial{
     margin: auto;
     font-size: 25vw;
@@ -153,20 +152,25 @@ transform: scale(1) translate(50%, 20%) skew(0deg);
    .ladoIzquierdo{
     display:unset;
    }
-   .sobre{
-     display: none;
-   }
-   .textIzquierdo{
+    .ladoDerecho{
+    display: unset;
+    }
+    .containerMiddle{
+        margin-top: 60%;
+}
+
+    .textIzquierdo{
+    position: absolute ;
+    top: 58%;
+    left: 2vw;
+    max-width: 80vw;
+    text-align: center;
+    color: #616161;
     margin: auto;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     padding: 9px;
-   }
-.ladoDerecho{
-    display: unset;
-}
-.containerMiddle{
-    margin-top: 45%;
+
 }
 
 /* pagina 4 logo */
@@ -178,11 +182,21 @@ transform: scale(1) translate(50%, 20%) skew(0deg);
 .alignMobileDots2{
     margin: 10% 0 0 25%;
 }
-/* pagina 6 ConfigurarTienda */s
-
-
-
-
+/* pagina 7 estilo tienda */
+.containerMiddleTienda{
+    margin-top: 55%;
+}
+/* pagina Felicitaciones */
+.textoMobil{
+    position: absolute ;
+    top: 60%;
+    left: 2%;
+}
+.felicitaciones{
+    position: absolute;
+    top: 45vh;
+    font-size: 50px;
+}
 
 
 
@@ -197,60 +211,43 @@ transform: scale(1) translate(50%, 20%) skew(0deg);
         justify-content: center;
     }
     
-    .center{
+.center{
         text-align: center;
     }
 /* achica los input */
+    .inputInline{
+    display: unset;
+}
     .input{
+        display: flex;
+        flex-direction: row;
         margin: auto;
         width: 60vw;
     }
-/* achica la imagen del usuario */
-    .user{
-      height: 30vw;
-      width: auto;
-  }
+/* achica  y reposiciona la imagen del usuario */
+.icon{
+    position: absolute;
+    left: 33vw;
+    top: 25vh;
+    height: 15%;
+}
 /* Edicion boton */
     .boton{
         padding: 15px;
         width: fit-content;
     }
-/* imagen moviendose  animada*/
-    .move{ 
-        margin-top: -15px;
-        width: 20vw;
-        height: auto;
-        animation: Animation 0.5s ease 0.1s 1 normal both;
-    }
-    .fotoMove{
-        margin: auto;
-    }
-/* animacion */
-    @keyframes Animation {
-        0.0%{
-            transform: scale(0.5) translate(0vw, 6vw);
-       }
-       100%{
-            transform: scale(1) translate(40vw, 6vw) skew(0deg);
-       }
-           }
-    /* Reposicion del logo abajo */
+
+ /* Reposicion del logo abajo */
     .logo{
         display: none;
     }
     .logoDevice{
         display: block;
-        margin-top: 2vh;
-        width: 40vw;
+        position: absolute;
+        top:85vh;
+        left: 20%;
+        width: 60vw;
     }
-    /* Container grid del user y los inputs */
-    .info{
-        margin-top: 15vh;
-        display: grid;
-        grid-row: 0.5fr 1fr 1fr;
-        justify-content: center;
-    }
-
 }
 
   
