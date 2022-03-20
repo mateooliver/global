@@ -65,13 +65,18 @@ html{
     }
 
 .radius{
-  margin: 30px 0 0 130px;
+    align-self: center;
+    justify-self: center;
+  
 }
 .radius2{
     margin: 30px 0 0 230px;
 }
 .radius3{
     margin: 30px 0 0 220px;
+}
+.mostrarMobile{
+ display: none;
 }
 /* mobile */
 @media (max-width: 700px) {
@@ -107,7 +112,7 @@ html{
     .botonMovil{
         display: block;
         position: absolute;
-        top:75%;
+        top:78vh;
         left: 37vw;
         width: fit-content;
     } 
@@ -170,17 +175,17 @@ html{
 }
 
     .textIzquierdo{
-    position: absolute ;
-    top: 62vh;
-    left: 2vw;
-    max-width: 80vw;
+        display: none;
+}
+.mostrarMobile{
+    display: block;
+    font-size: 12px;
     text-align: center;
-    color: #616161;
-    margin: auto;
-    text-align: center;
-    font-size: 16px;
-    padding: 9px;
+    max-width: 80%;
 
+}
+.textIzquierdo p{
+    width: 90%;
 }
 .radius{
     margin:10px 0 0 70px;
