@@ -81,6 +81,9 @@ html{
 .mostrarMobile{
  display: none;
 }
+.logoDeviceFelicidades{
+    display: none;
+}
 /* mobile */
 @media (max-width: 700px) {
         /* pagina inicio  */
@@ -90,7 +93,7 @@ html{
         background-color: rgba(244, 244, 244, 0.1);
         background-image: url("../img/backgroundMobile.png");
         background-position: center;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         height: 50vw;
     }
@@ -172,10 +175,12 @@ html{
     .ladoDerecho{
     display: unset;
     }
-    .containerMiddle{   
-    margin-top: 30vh;
+    .containerMiddle{  
+    margin-top: unset; 
     display: grid;
     grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .textIzquierdo{
@@ -202,15 +207,17 @@ html{
 }
 /* pagina 7 estilo tienda */
 .containerMiddleTienda{
-    margin-top: 24vh;
+    margin-top: unset; 
     display: grid;
     grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
 }
 /* pagina Felicitaciones */
 .textoMobil{
     display: block;
     position: relative ;
-    margin: 70% 2% 0 0 ; 
+    margin: 70% 0% 0 0 ; 
 }
 .felicitaciones{
     position: absolute;
@@ -221,8 +228,6 @@ html{
     font-size: 100px;
 
  }
-
-
 .display{
         display: block;
         margin: auto;
@@ -249,10 +254,11 @@ html{
     }
 /* achica  y reposiciona la imagen del usuario */
 .icon{
-    position: absolute;
-    left: 33vw;
-    top: 25vh;
-    height: 15%;
+    margin-top: 20vw;
+    display: unset;
+    position: unset;
+    height: 30vw;
+    justify-self: center
 }
 /* Edicion boton */
     .boton{
