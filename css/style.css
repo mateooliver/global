@@ -84,6 +84,9 @@ html{
 .logoDeviceFelicidades{
     display: none;
 }
+.textoMobil{
+    display: none;
+}
 /* mobile */
 @media (max-width: 700px) {
         /* pagina inicio  */
