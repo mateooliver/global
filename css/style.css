@@ -135,8 +135,8 @@ html{
     }
     .pregunta2{
         margin: auto;
+        max-width: unset;
     }
-    
     /* texto al lado de los radius */
     .radiusText{
     font-family: 'Nunito';
