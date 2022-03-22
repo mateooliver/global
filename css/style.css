@@ -110,7 +110,6 @@ html{
         grid-template-rows: auto;
         justify-content: center;
         align-items: center;
-
     }
 
     /* componentes */
@@ -134,6 +133,10 @@ html{
     .nubes{
        display: none;
     }
+    .pregunta2{
+        margin: auto;
+    }
+    
     /* texto al lado de los radius */
     .radiusText{
     font-family: 'Nunito';
