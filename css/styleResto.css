@@ -12,7 +12,7 @@ background-repeat: no-repeat;
 }
 
 .ladoIzquierdo{
-    min-width:400px ;
+  
     height: 100vh;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -68,26 +68,51 @@ background-repeat: no-repeat;
     
    }
 .ladoDerecho{
-    overflow: scroll;
-    min-width: 300px;
+    text-align: center;
+    margin: auto;
     height: 100vh;
     display: grid;
-    grid-template-rows: 20% 40% 40%;
- 
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
 }
-.ladoDerecho div{
-    min-width: 80%;
+.ladoDerechoEstiloTienda{
+    height: 100vh;
+  display: grid;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+
 }
+
 .logo{
-    align-self:center ;
-    justify-self: center;
+    position: absolute;
+    left: 64%;
+    right: 21.65%;
+    top: 4.54%;
+    bottom: 88.43%;
+    width: 20vw;
 
 }
 .containerMiddle{
-    margin-top: 20vh;
+    margin-top: unset; 
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.containerMiddleEstiloTienda{
+    margin-top: 20%; 
+    display: unset;
+    grid-template-rows: unset;
+    justify-content: unset;
+    align-items: unset
 }
 
 .pregunta2{
+    max-width: 90%;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 300;
@@ -95,6 +120,15 @@ background-repeat: no-repeat;
     text-align: center;
     color: #616161;
 }
+/* Texto al lado de los radius */
+.radiusText{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: #616161;
+    }
 
 
 /* pagina 4 */
@@ -128,15 +162,13 @@ background-repeat: no-repeat;
  }
  .galeria{
      margin: auto;
-     max-width: 90%;
+     max-width: 35vw;
      display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
      overflow: scroll;  
  }
- .containerMiddleTienda{
-    margin-top: 18vh;
-}
+
 
  /* Pagina 8 crear un dominio */
  .background8{

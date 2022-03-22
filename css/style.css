@@ -33,7 +33,7 @@ html{
     position: absolute;
     height: 18%;
     width: auto;
-    left: 71vw;
+    left: 70vw;
     top: 18vh;
 }
 .inputs::placeholder{
@@ -44,9 +44,11 @@ html{
     grid-template-columns: 1fr 1fr;
 }
 .input{
+    margin: auto;
     max-width: 90%;
 }
 .inputs{
+ 
     color:#826ad7;
     font-weight: 500;
 }
@@ -55,9 +57,6 @@ html{
     display: flex;
    flex-direction: row;
    flex-wrap:nowrap;
-}
-.logo{
-    width: 13vw;
 }
 
 .logoDevice{
@@ -106,28 +105,43 @@ html{
         display: block;
     }
     .bienvenidoGrid{
-        display: block;
+        margin-top: unset; 
+        display: grid;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+
     }
 
     /* componentes */
     .boton{
+        justify-self: center;
         position: unset;
+        padding: 15px;
+        width: fit-content;
     }
     .bienvenidoMobile{
         margin-top: 80vw;
         text-align: center;
         font-size: 15vw;
     }
-    .botonRegistrar{
-        margin:7vw 0 0 35vw;
-    }
+
     .botonMovil{
-        margin-top: 3%;
+        margin-top: 5%;
         text-align: center;
         width: fit-content;
     } 
     .nubes{
-        background: none;
+       display: none;
+    }
+    /* texto al lado de los radius */
+    .radiusText{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    color: #616161;
     }
 
   /* animacion para todas las pages */
@@ -179,6 +193,7 @@ html{
     display: unset;
     }
     .containerMiddle{  
+        margin: auto;
     margin-top: unset; 
     display: grid;
     grid-template-rows: auto;
@@ -187,7 +202,13 @@ html{
 }
 
 .textIzquierdo{
-    display: none;   
+    display: none;
+    justify-self: unset;
+    align-self: unset;
+    width: unset;
+    min-width: unset;
+    margin:unset;
+   
 }
 .mostrarMobile{
     display: block;
@@ -196,9 +217,7 @@ html{
     max-width: 80%;
 
 }
-.textIzquierdo p{
-    width: 90%;
-}
+
 .radius{
     margin:10px 0 0 70px;
 }
@@ -209,7 +228,10 @@ margin-left: 20vw;
     margin: 10px 0 0 20px;
 }
 /* pagina 7 estilo tienda */
-.containerMiddleTienda{
+.galeria{
+    max-width: 90vw;
+}
+.containerMiddleEstiloTienda{
     margin-top: unset; 
     display: grid;
     grid-template-rows: auto;
@@ -219,12 +241,10 @@ margin-left: 20vw;
 /* pagina Felicitaciones */
 .textoMobil{
     display: block;
-    margin:90% 0% 0 0 ; 
     font-size: 25px;
 }
 .felicitaciones{
-    position: absolute;
-    top: 43vh;
+   margin-top: 45%;
     font-size: 50px;
 }
 .signoExclamacion{
@@ -257,18 +277,12 @@ margin-left: 20vw;
     }
 /* achica  y reposiciona la imagen del usuario */
 .icon{
-    margin-top: 20vw;
+    margin-top: 16vw;
     display: unset;
     position: unset;
     height: 30vw;
     justify-self: center
 }
-/* Edicion boton */
-    .boton{
-        padding: 15px;
-        width: fit-content;
-    }
-   
 
  /* Reposicion del logo abajo */
     .logo{

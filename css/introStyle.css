@@ -4,11 +4,9 @@ html{
 }
 
 .backgroundBienvenida{
-
     background-image: url("../img/backgroundBienvenida.png");
     background-size:cover;
     background-repeat: no-repeat;
-
 }
 
 .divisionPantalla{
@@ -17,11 +15,12 @@ html{
     grid-template-columns: 50vw 50vw;
 }
 .cohete{
+    z-index: 1;
     overflow:auto;
     margin: 49.9vh 0 0 10vh;
     height: 50vh;
 }
-/* Copy this @keyframes block to your CSS*/
+
 @keyframes yourAnimation {
     0.0%{
         transform: translate(0, -10vh);
@@ -36,21 +35,24 @@ html{
     animation: yourAnimation 2s ease 0s 1 normal forwards;
     }
 .nubes{
-   
-    background-image: url("../img/Nubes.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0  5vh;
+    display: block;
+    position: absolute;
+    left: 2vw;
+    top: 2vw;
+    width:auto;
+    height: 100vh;
 
 }
 .bienvenidoGrid{
+
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows:auto;
+    align-items: center;
     justify-content: center;
-    align-self:center;
+    
 }
 .bienvenido{
-    margin-top: 25vh;
+    
     font-family:'Nunito';
     font-style: normal;
     font-weight: 100;
@@ -60,7 +62,7 @@ html{
     color: #4D53D9;
 }
 .genial{
-    margin-top: 15vh;
+ 
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
@@ -70,28 +72,9 @@ html{
     text-align: center;
     color: #4D53D9;
 }
-.logo360Bienvenido{
-  margin: 3vw 0 0 3vw;
-}
 
-.botonRegistrar{
-    margin: 10vw 0vw 0vw 7vw;
-    height: 7vh;
-    width: 12vw;
-    background: linear-gradient(90deg, #826AD7 0%, #98DEF3 99.99%);
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 200;
-    font-size: 3vh;
-    border: none;
-    text-align: center;
-    color: #FFFFFF;
-} 
-.botonRegistrar:hover{
-box-shadow: 7px 7px 25px #4FBCF1;}
-.botonRegistrar:active{
-    background: linear-gradient(0.25turn, #5e3fcc, #2989a6);
-}
-.botonRegistrar::after{
-    background: linear-gradient(0.25turn, #5e3fcc, #2989a6);
+
+.logo360Bienvenido{
+   
+    height:50%;
 }
