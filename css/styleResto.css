@@ -4,21 +4,14 @@ html{
 }
 
 .background3{
-height: 100vh;
-width: auto;
-overflow: hidden;
+
 background-image: url("../img/background3.png");
 background-size:cover;
 background-repeat: no-repeat;
 
 }
 
-.divisionPantalla{
-display: grid;
-grid-template-columns: 1fr 1fr;
-}
 .ladoIzquierdo{
-    overflow:scroll;
     min-width:400px ;
     height: 100vh;
     display: grid;
@@ -106,9 +99,7 @@ grid-template-columns: 1fr 1fr;
 
 /* pagina 4 */
 .background4{
-    height: 100vh;
-    width: auto;
-    overflow: hidden;
+    
     background-image: url("../img/background4.png");
     background-size:cover;
     background-repeat: no-repeat;
@@ -122,9 +113,7 @@ grid-template-columns: 1fr 1fr;
 
 /* pagina 5 */
 .background5{
-    height: 100vh;
-    width: auto;
-    overflow: hidden;
+
     background-image: url("../img/background5.png");
     background-size:cover;
     background-repeat: no-repeat;
@@ -151,9 +140,7 @@ grid-template-columns: 1fr 1fr;
 
  /* Pagina 8 crear un dominio */
  .background8{
-    height: 100vh;
-    width: auto;
-    overflow: hidden;
+  
     background-image: url("../img/background8.png");
     background-size:cover;
     background-repeat: no-repeat;
