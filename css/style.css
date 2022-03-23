@@ -137,7 +137,8 @@ html{
         margin: auto;
         max-width: unset;
     }
-    .progress{
+    .progresoBar{
+        margin: auto;
         position: unset;
      
         top:unset;
@@ -146,12 +147,14 @@ html{
         height: 16px;
     }
     .progreso{
+       
         position: unset;
         top:unset;
         left: unset;
        font-size: 10px;
        text-align: center;
         margin: auto;
+        width: fit-content;
     }
     /* texto al lado de los radius */
     .radiusText{
@@ -225,6 +228,7 @@ html{
 .textIzquierdo{
     display: none;
     max-width: unset;
+    margin-top: unset;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 500;
