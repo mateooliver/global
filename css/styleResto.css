@@ -211,8 +211,11 @@ background-repeat: no-repeat;
  }
  .signoExclamacion{
     font-size: 13vw;
- }
+}
  
+ .centrarFelicitaciones{
+ margin-top: 20%;
+ }
 .sistemaActivado{
     font-family: 'Nunito';
     font-style: normal;
@@ -221,6 +224,10 @@ background-repeat: no-repeat;
     line-height: 108.19%;
 text-align: center;
 color: #616161;}
+
+.sistemaActivadoMobil{
+    display: none;
+}
 
  /* progress bar */
  .progress{
