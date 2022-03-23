@@ -12,14 +12,21 @@ background-repeat: no-repeat;
 }
 
 .ladoIzquierdo{
-  
     height: 100vh;
+    width: 50vw;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+
 }
 
 .sobre{
     height: 60vh;
+    margin: 10% 0 0 10%;
+}
+.sobre2{
+    height: 60vh;
+    margin: 20% 0 0 10%;
 }
 /* animacion cuando solo hay imagen */
 @keyframes Animation {
@@ -54,11 +61,8 @@ background-repeat: no-repeat;
 }
 
 .textIzquierdo{
-    justify-self: start;
-    align-self: flex-end;
-    width: 30%;
-    min-width: 400px;
-    margin:10vh 0 3vw 3vw;
+    display: block;
+    max-width: 70%;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 500;
@@ -67,6 +71,7 @@ background-repeat: no-repeat;
     color: #353C73;
     
    }
+
 .ladoDerecho{
     text-align: center;
     margin: auto;
@@ -121,6 +126,8 @@ background-repeat: no-repeat;
     text-align: center;
     color: #616161;
 }
+/* pagina 3 */
+
 /* Texto al lado de los radius */
 .radiusText{
     font-family: 'Nunito';
@@ -202,4 +209,5 @@ background-repeat: no-repeat;
     font-size: 13vw;
 
  }
+
  /* pagina 9 felicitaciones */
