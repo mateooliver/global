@@ -153,7 +153,7 @@ html{
         transform: scale(0.5) translate(0vw, 6vw);
    }
    100%{
-        transform: scale(1) translate(40vw, 2vw) skew(0deg);
+        transform: scale(0.9) translate(20vw, 2vw) skew(0deg);
    }
        }
     .moveMobil{ 
@@ -206,12 +206,13 @@ html{
 
 .textIzquierdo{
     display: none;
-    justify-self: unset;
-    align-self: unset;
-    width: unset;
-    min-width: unset;
-    margin:unset;
-   
+    max-width: unset;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: unset;
+    text-align: center;
+    color: #353C73;
 }
 .mostrarMobile{
     display: block;
