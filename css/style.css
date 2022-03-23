@@ -31,10 +31,10 @@ html{
 }
 .icon{
     position: absolute;
-    height: 18%;
+    height: 16%;
     width: auto;
     left: 71vw;
-    top: 15%;
+    top: 17%;
 }
 .inputs::placeholder{
     color: #69828a;

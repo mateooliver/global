@@ -92,11 +92,11 @@ background-repeat: no-repeat;
 
 .logo{
     position: absolute;
-    left: 64%;
+    left: 66%;
     right: 21.65%;
     top: 4.54%;
     bottom: 88.43%;
-    width: 20vw;
+    width: 17vw;
 
 }
 .containerMiddle{
@@ -125,6 +125,17 @@ background-repeat: no-repeat;
     font-size: 25px;
     text-align: center;
     color: #616161;
+}
+.textoStyle{
+    margin-top: 2%;
+    width: 80%;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 108.19%;
+    text-align: center;
+    color: #353C73;
 }
 /* pagina 3 */
 
@@ -229,6 +240,16 @@ color: #616161;}
     display: none;
 }
 
+/*  pagina 11 afip */
+.recuadro{
+    
+    background: rgba(242, 242, 242, 0.93);
+    border: 3px solid #826BD7;
+    box-sizing:border-box;
+    box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 42px;
+}
+
  /* progress bar */
  .progress{
      position: absolute;
@@ -238,7 +259,7 @@ color: #616161;}
  }
  .progreso{
     position: absolute;
-    top:79%;
+    top:78%;
     left: 65%;
     width: 20%;
     font-size: 12px;
