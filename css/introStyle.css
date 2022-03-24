@@ -4,7 +4,7 @@ html{
 }
 
 .backgroundBienvenida{
-    background-image: url("https://www.freepik.es/vector-gratis/fondo-plantilla-banner-explosion-pinturas-festival-holi-nubes-polvo-rosa-amarillo-naranja-borde-horizontal-salpicaduras-color-nubes-coloridas-ilustracion-vector-3d-realista_24417307.htm");
+    background-image: url("../img/backgroundBienvenida.png");
     background-size:cover;
     background-repeat: no-repeat;
 }
