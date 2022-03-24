@@ -101,5 +101,23 @@ html{
     transition: all 1% ease;
 }
 #carga{
-
+ border: 15px solid #4D53D9;
+ border-top-color:#616161 ;
+ border-top-style: groove;
+ height: 100px;
+ width: 100px;
+ border-radius: 100%;
+ position: absolute;
+ top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: carga 1.5s linear infinite;
+    -o-animation: carga 1.5s linear infinite;
+    animation: carga 1.5s linear infinite;
+}
+@keyframes carga{
+    from{ transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
 }
