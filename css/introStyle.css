@@ -101,11 +101,11 @@ html{
     transition: all 1% ease;
 }
 #carga{
- border: 15px solid #4D53D9;
- border-top-color:#616161 ;
+ border: 10px solid #a7a7a7;
+ border-top-color:#4D53D9 ;
  border-top-style: groove;
- height: 100px;
- width: 100px;
+ height: 50px;
+ width: auto;
  border-radius: 100%;
  position: absolute;
  top: 0;
