@@ -17,6 +17,12 @@
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body class=" backgroundBienvenida backgroundMobil img-fluid">
+    
+    <div id="contenedor_carga">
+        <div id='carga' class="spinner-border" role="status">
+            <span class="visually-hidden">Cargando...</span>
+          </div>
+    </div>
     <section class=" ">
         <div class="divisionPantalla  ">
             <div >
@@ -31,14 +37,22 @@
                 </div>
                 <button id="registrate" class="backgroundBtn botonMovil boton">Registrate</button>
             </div>
-               
+        </div>
             
 
-        </div>
-        
+      
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
     <script>
+        window.onload=function(){
+            var contenedor=document.getElementById("contenedor_carga");
+            contenedor.style.visibility= 'hidden';
+               contenedor.style.opacity= '0';
+        }
+    </script>
+
+   <script>
 
         $("#registrate").click(()=> {
             $("#cohete").show( "cohete" )
@@ -53,12 +67,8 @@
              setTimeout(()=>{
                 window.location.href="./pages/02.html"
              },1700)
-            
-             
-           
-           
      })
          </script>
-     
+    
 </body>
 </html>

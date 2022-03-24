@@ -110,11 +110,10 @@ background-repeat: no-repeat;
 
 }
 .containerMiddleEstiloTienda{
-    margin-top: 2%; 
     display: unset;
     grid-template-rows: unset;
     justify-content: unset;
-    align-items: unset
+    align-items: unset;
 }
 
 .pregunta2{
@@ -182,8 +181,8 @@ background-repeat: no-repeat;
  }
  .galeria{
      margin: auto;
-     max-width: 35vw;
-
+     width: 50%;
+    height: auto;
      display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -192,6 +191,11 @@ background-repeat: no-repeat;
 /* Estilo tienda */
 .tiendaTexto{
     font-size: 18px;
+    
+}
+.imagenCarousel{
+    height: auto;
+    width: 14.5vw;
 }
 
  /* Pagina 8 crear un dominio */
