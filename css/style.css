@@ -30,11 +30,10 @@ html{
 
 }
 .icon{
-    position: absolute;
-    height: 15%;
+    height: 15vh;
     width: auto;
-    left: 71vw;
-    top: 17%;
+    margin: 3%;
+ 
 }
 .inputs::placeholder{
     color: #69828a;
@@ -216,7 +215,6 @@ html{
     }
     .containerMiddle{  
         margin: auto;
-
     margin-top: unset; 
     display: grid;
     grid-template-rows: auto;
@@ -255,7 +253,13 @@ margin-left: 20vw;
 }
 /* pagina 7 estilo tienda */
 .galeria{
-    max-width: 90vw;
+   
+    max-width: 95vw;
+}
+.imagenCarousel{
+
+    height: auto;
+    width: 45vw;
 }
 .containerMiddleEstiloTienda{
     margin-top: unset; 
@@ -310,6 +314,22 @@ margin-left: 20vw;
 text-align: center;
 color: #616161;
 }
+
+/* Comenzar Ahora */
+.comenzarAhoraTxt{
+  
+    text-align: center;
+    color: #4D53D9;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 108.19%;
+  
+}
+
+
+
 /* achica los input */
     .inputInline{
     display: unset;

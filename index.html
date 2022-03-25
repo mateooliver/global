@@ -19,7 +19,7 @@
 <body class=" backgroundBienvenida backgroundMobil img-fluid">
     
     <div id="contenedor_carga" style="display:grid; grid-template-rows: auto; justify-content: center;">
-        <img id="logo" style="width: 45vh; margin:auto; justify-self: center; align-self: center; text-align: center;" src="./img/logo360.png" alt="logo">
+        <img id="logo2" style="width: 45vh; margin:auto; justify-self: center; align-self: center; text-align: center;" src="./img/logo360.png" alt="logo">
         <div id='carga'> </div>
     </div>
     <section class=" ">
@@ -47,7 +47,7 @@
         window.onload=function(){
             var contenedor=document.getElementById("contenedor_carga");
             contenedor.style.visibility= 'hidden';
-               contenedor.style.opacity= '0';
+               contenedor.style.animation= '0';
         }
     </script>
 
@@ -59,6 +59,7 @@
             $("#cohete").addClass( "Animate" )
             $("#nubes").fadeOut("fast")
              $("#bienvenido").hide("fast")
+             $("#logo2").hide("fast")
              $("#logo").hide("fast")
              $("#registrate").hide("fast")
              $("#gracias").fadeIn("slow")

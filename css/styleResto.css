@@ -79,10 +79,12 @@ background-repeat: no-repeat;
     height: 100vh;
     display: grid;
     grid-template-rows: auto;
-    justify-content: center;
-    align-items: center;
+   justify-content: center;
+   align-items: center;
+   
 }
 .ladoDerechoEstiloTienda{
+    text-align: center;
     height: 100vh;
   display: grid;
   grid-template-rows: auto;
@@ -103,10 +105,10 @@ background-repeat: no-repeat;
 .containerMiddle{
     margin-top: unset; 
     display: grid;
-    grid-template-rows: auto;
-    justify-content: center;
+    grid-template-rows: 60%;
+    justify-self:center;
     align-items: center;
-   
+    
 
 }
 .containerMiddleEstiloTienda{
@@ -215,7 +217,7 @@ background-repeat: no-repeat;
  }
  /* pagina Felicitaciones */
  .felicitaciones{
-
+    margin: 3%;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
@@ -228,9 +230,7 @@ background-repeat: no-repeat;
     font-size: 13vw;
 }
  
- .centrarFelicitaciones{
- margin-top: 20%;
- }
+
 .sistemaActivado{
     font-family: 'Nunito';
     font-style: normal;
@@ -243,7 +243,16 @@ color: #616161;}
 .sistemaActivadoMobil{
     display: none;
 }
-
+/* pagina comenzar Ahora */
+.comenzarAhoraTxt{
+    font-family:'Nunito';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 10vh;
+    line-height: 75%;
+    text-align: center;
+    color: #4D53D9;
+}
 /*  pagina 11 afip */
 .recuadro{
     
