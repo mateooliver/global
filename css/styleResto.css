@@ -75,7 +75,7 @@ background-repeat: no-repeat;
 
 .ladoDerecho{
     text-align: center;
-    margin: auto;
+    margin: 1% 0 0 0;
     height: 100vh;
     display: grid;
     grid-template-rows: auto;
@@ -96,6 +96,16 @@ background-repeat: no-repeat;
 .logo{
     position: absolute;
     left: 66%;
+    right: 21.65%;
+    top: 4%;
+    bottom: 88.43%;
+    width: 15vw;
+
+}
+/* logo de la segunda parte, al borde izq */
+.logo2{
+    position: absolute;
+    left: 35%;
     right: 21.65%;
     top: 4%;
     bottom: 88.43%;
@@ -129,7 +139,8 @@ background-repeat: no-repeat;
     color: #616161;
 }
 .textoStyle{
-    margin-top: 2%;
+   
+    font-family: 'Nunito';
     width: 80%;
     font-family: 'Nunito';
     font-style: normal;
@@ -261,6 +272,23 @@ color: #616161;}
     box-sizing:border-box;
     box-shadow: 4px 7px 4px rgba(0, 0, 0, 0.25);
     border-radius: 42px;
+
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 300;
+font-size: 90%;
+line-height: 108.19%;
+text-align: center;
+color: #353C73;
+}
+.form-check{
+    margin-left: 35%;
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 100%;
+text-align: left;
+color: #808080;
 }
 
  /* progress bar */
