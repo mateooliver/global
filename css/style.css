@@ -327,7 +327,25 @@ color: #616161;
     line-height: 108.19%;
   
 }
-
+/* paso 1 */
+.form-check{
+    margin-left:20%;
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 100%;
+text-align: left;
+color: #808080;
+}
+/* AFIp */
+.marginMobile{
+    margin-top: 23%;
+}
+.marginTop{
+    height: unset;
+    justify-self: unset;
+    width: unset;
+ }
 
 
 /* achica los input */

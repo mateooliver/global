@@ -290,7 +290,13 @@ font-size: 100%;
 text-align: left;
 color: #808080;
 }
+/* paso 02-11  */
 
+.marginTop{
+   height: 100vh;
+   justify-self: flex-start;
+   width: 40vw;
+}
  /* progress bar */
  .progresoBar{
      position: absolute;

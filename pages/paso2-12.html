@@ -20,7 +20,7 @@
         <div class="container-fluid divisionPantalla">
             <!-- Lado izquierdo -->
             <div class="">
-                <div ><img id="imagen" class="img-fluid sobre2 animate__animated animate__fadeInUp animate__slow moveMobil" src="../img/img11.png" alt=""></div>
+                <div ><img id="imagen" class="img-fluid sobre2 animate__animated animate__fadeInUp animate__slow moveMobil" src="../img/img12.png" alt=""></div>
             </div>
 
             <!-- Lado derecho - grid con 3 sections-->
@@ -29,35 +29,29 @@
                    
                     <img id="logo" class="logo2" src="../img/logo360.png" alt="logo">
 
-                    <div class="containerMiddle marginMobile">
-                        <div class="center ">
-                             <div style=" font-family: 'Nunito'; font-style: normal;font-weight: 900;font-size: 200%;line-height: 108.19%;text-align: center;color: #353C73;">PASO 1</div>
-                            <div id="" class="textoStyle container-fluid my-3 ">¿Cual es tu condición ante AFIP?</div>
+                    <div class="containerMiddle marginMobile margin" >
+                        <div class="center " >
+                             <div style=" font-family: 'Nunito'; font-style: normal;font-weight: 900;font-size: 200%;line-height: 108.19%;text-align: center;color: #353C73;">PASO 2</div>
+                            <div id="" class="textoStyle container-fluid my-3 " >Cuando realizas una venta ¿Deseas que el IVA este incluido en el
+                                valor del producto? O sea el valor de producto más IVA.</div>
+
                             <!-- formulario -->
+                            <div> <img src="../img/iva.png" alt=""></div>
                             <div style="text-align:left ;" class="">
                                 <div class="form-check " >
                                     <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="noEstoyInscripto">
                                     <label class="form-check-label" for="flexRadioDefault1">
-                                        No estoy inscripto
+                                        Si, deseo que esté incluido 
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="responsableInscripto" >
                                     <label class="form-check-label" for="flexRadioDefault2">
-                                    Responsable inscripto
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="monotributista" >
-                                    <label class="form-check-label" for="flexRadioDefault2">
-                                    Monotributista
+                                        No, no deseo que esté incluido
                                     </label>
                                 </div>
                             </div>
-                            <div class="recuadro col-9 mx-auto my-3">
-                             <div class="container-fluid p-3 ">Si eliges esta opción no podrás emitir facturas scales, solo podrás emitir presupuestos
-                                ticket no scales y no contaras con todas las funciones del sistema</div>
-                            </div>
+
                             
                             <a href='' id="siguientePaso1" class=""><button type="button" id="" class="backgroundBtn botonMovil boton">Siguiente</button></a>
                             
@@ -71,30 +65,7 @@
        
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $("#noEstoyInscripto").on('change', function(ev){
-            ev.preventDefault();
-            $("#noEstoyInscripto").prop('checked', true);
-            $("#responsableInscripto").prop("checked", false);
-            $("#monotributista").prop("checked", false);
-            $("#siguientePaso1").attr("href", "../pages/paso02-11.html");
-        });
-        $("#responsableInscripto").on('change', function(ev){
-            ev.preventDefault();
-            $("#responsableInscripto").prop("checked", true);
-            $("#noEstoyInscripto").prop('checked', false);
-            $("#monotributista").prop("checked", false);
-            $("#siguientePaso1").attr("href", "../pages/paso2-12.html");
-        });
-        $("#monotributista").on('change', function(ev){
-            ev.preventDefault();
-            $("#monotributista").prop("checked", true);
-            $("#responsableInscripto").prop("checked", false);
-            $("#noEstoyInscripto").prop('checked', false);
-            $("#siguientePaso1").attr("href", "../pages/paso2-12.html");
-        });
-        
-    </script>
+  
    
          
     
