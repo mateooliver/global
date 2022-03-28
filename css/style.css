@@ -8,6 +8,10 @@ html{
     top: 70vh;
     left: 69%;
 }
+.boton2{
+    position:relative
+
+}
 
 .backgroundBtn{
     height: 7vh;
@@ -268,6 +272,95 @@ margin-left: 20vw;
     justify-content: center;
     align-items: center;
 }
+
+#carousel {
+    position: relative;
+    height: 30vh;
+    width: 95vw;
+    top: 18vh;
+    
+    transform: translateY(-50%);
+    overflow: hidden;
+  }
+  #carousel div {
+    position: absolute;
+    top: 5%;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+  }
+  #carousel div img {
+    height: 20vh;
+    width: auto;
+    transition: width 1s;
+  }
+  #carousel div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(0%) translateX(-100%);
+  }
+  #carousel div.hideLeft img {
+    height: 17h;
+    width: auto;
+  }
+  #carousel div.hideRight {
+   
+    opacity: 0;
+    transform: translateY(-10%) translateX(-50%);
+  }
+  #carousel div.hideRight img {
+    height: 17vh;
+    width: auto;
+}
+  #carousel div.prev {
+    z-index: 5;
+    left: 33%;
+    transform: translateY( 13px) translateX(-100%);
+  }
+  #carousel div.prev img {
+    height: 18vh;
+    width: auto;
+  }
+  #carousel div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(10%) translateX(0%);
+    opacity: 0;
+  }
+  #carousel div.prevLeftSecond img {
+    height: 17vh;
+    width: auto;
+  }
+  #carousel div.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(-10px) translateX(-50%);
+  }
+  #carousel div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(13px) translateX(-10%);
+  }
+  #carousel div.next img {
+    height: 18vh;
+    width: auto;
+  }
+  #carousel div.nextRightSecond {
+    z-index: 4;
+    left: 70%;
+    transform: translateY(0%) translateX(40%);
+    opacity: 0;
+  }
+  #carousel div.nextRightSecond img {
+    height: 17vh;
+    width: auto;}
+  
+  .buttons {
+  opacity: 0;
+  }
+
+
+
+
 /* pagina Felicitaciones */
 .textoMobil{
     display: block;

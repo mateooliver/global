@@ -28,22 +28,52 @@
             <div class="ladoDerechoEstiloTienda ">
                 <!-- seccion 1 -->
                     <img id="logo" class="logo" src="../img/logo360.png" alt="logo">
-                    <div class=" containerMiddle">
+                    <div class=" containerMiddleTienda">
                         <div>
                             <img id="" class="icon" src="../img/Icon7.png" alt="Estilo Tienda">
                             <div id="" class="pregunta2 tiendaTexto ">¿Qué tipo de estilo te gustaría para tú tienda online? </div>    
-                            <div class=" center">
-                                <div class="galeria ">
-                                        <a id="bordes1"  href="#one!"><img class="rounded-3 mouseCarousel  imagenCarousel" id="img1" src="../img/img02.png"></a>
-                                        <a id="bordes2" href="#two!"><img class="rounded-3 mouseCarousel imagenCarousel" id="img2" src="../img/img02.png"></a>
-                                        <a id="bordes3" href="#two!"><img class="rounded-3 mouseCarousel imagenCarousel" id="img3" src="../img/img02.png"></a>
-                                        <a id="bordes4" href="#two!"><img class="rounded-3 mouseCarousel imagenCarousel" id="img4" src="../img/img02.png"></a>
-                                        <a id="bordes5" href="#three!"><img  class="rounded-3 mouseCarousel imagenCarousel" id="img5"src="../img/img02.png"></a>
-                                </div>
+                            <div class=" ">
+                                <div id="carousel">
+
+                                    <div class="hideLeft">
+                                     <img class="imagenCarousel border border-3 " src="../img/img02.png">
+                                   </div>
+                             
+                                   <div class="prevLeftSecond">
+                                     <img class="imagenCarousel border border-3 "  src="../img/img02.png">
+                                   </div>
+                             
+                                   <div class="prev">
+                                     <img class="imagenCarousel border border-3" src="../img/img02.png">
+                                   </div>
+                             
+                                   <div class="selected">
+                                     <img class="imagenCarousel border border-3" src="../img/img02.png">
+                                   </div>
+                             
+                                   <div class="next">
+                                     <img class="imagenCarousel border border-3" src="../img/img02.png">
+                                   </div>
+                             
+                                   <div class="nextRightSecond">
+                                     <img class="imagenCarousel border border-3 "  src="../img/img02.png">
+                                   </div>
+                             
+                                   <div class="hideRight">
+                                     <img class="imagenCarousel border border-3 "  src="../img/img02.png">
+                                   </div>
+                             
+                                 </div>
+                             
+                                 <div class="">
+                                   <button  class="buttons" id="prev" style="position: relative;top: -17vh; left:-20vw;"><img src="../img/izquierda.png" alt="Flecha"> </button>
+                                   <button class="buttons" id="next"style="position: relative;top: -17vh; left:20vw;"><img src="../img/derecha.png" alt="Flecha"></button>
+                                 </div>
+      
                                 <a href="../pages/link8.html"><button type="button" id="siguiente" class="backgroundBtn botonMovil boton">Siguiente</button></a>
                             </div> 
                         </div>
-                    <div class="my-2">
+                    <div class="my-2" >
                         <p class="progreso text-secondary ">75% completado</p>
                         <div class="progress progresoBar">
                           <div class="progress-bar rounded-3" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -59,44 +89,64 @@
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $("#bordes1").click(()=>{
-            $("#img2").removeClass(" border border-primary border-5")
-            $("#img3").removeClass(" border border-primary border-5")
-            $("#img4").removeClass(" border border-primary border-5")
-            $("#img5").removeClass(" border border-primary border-5")
-            $("#img1").addClass(" border border-primary border-5")
-        })
-        $("#bordes2").click(()=>{
-            $("#img1").removeClass(" border border-primary border-5")
-            $("#img3").removeClass(" border border-primary border-5")
-            $("#img4").removeClass(" border border-primary border-5")
-            $("#img5").removeClass(" border border-primary border-5")
-            $("#img2").addClass(" border border-primary border-5")
+        function moveToSelected(element) {
 
-        })
-        $("#bordes3").click(()=>{
-            $("#img2").removeClass(" border border-primary border-5")
-            $("#img1").removeClass(" border border-primary border-5")
-            $("#img4").removeClass(" border border-primary border-5")
-            $("#img5").removeClass(" border border-primary border-5")
-            $("#img3").addClass(" border border-primary border-5")
-        })
-        $("#bordes4").click(()=>{
-            $("#img2").removeClass(" border border-primary border-5")
-            $("#img3").removeClass(" border border-primary border-5")
-            $("#img1").removeClass(" border border-primary border-5")
-            $("#img5").removeClass(" border border-primary border-5")
-            $("#img4").addClass(" border border-primary border-5")
-        })
-        $("#bordes5").click(()=>{
-            $("#img2").removeClass(" border border-primary border-5")
-            $("#img3").removeClass(" border border-primary border-5")
-            $("#img4").removeClass(" border border-primary border-5")
-            $("#img1").removeClass(" border border-primary border-5")
-            $("#img5").addClass(" border border-primary border-5")
-        })
-         
+if (element == "next") {
+  var selected = $(".selected").next();
+} else if (element == "prev") {
+  var selected = $(".selected").prev();
+} else {
+  var selected = element;
+}
+
+var next = $(selected).next();
+var prev = $(selected).prev();
+var prevSecond = $(prev).prev();
+var nextSecond = $(next).next();
+
+$(selected).removeClass().addClass("selected");
+
+$(prev).removeClass().addClass("prev");
+$(next).removeClass().addClass("next");
+
+$(nextSecond).removeClass().addClass("nextRightSecond");
+$(prevSecond).removeClass().addClass("prevLeftSecond");
+
+$(nextSecond).nextAll().removeClass().addClass('hideRight');
+$(prevSecond).prevAll().removeClass().addClass('hideLeft');
+
+}
+
+// Eventos teclado
+$(document).keydown(function(e) {
+  switch(e.which) {
+      case 37: // left
+      moveToSelected('prev');
+      break;
+
+      case 39: // right
+      moveToSelected('next');
+      break;
+
+      default: return;
+  }
+  e.preventDefault();
+});
+
+$('#carousel div').click(function() {
+moveToSelected($(this));
+});
+
+$('#prev').click(function() {
+moveToSelected('prev');
+});
+
+$('#next').click(function() {
+moveToSelected('next');
+});
+
     </script>
+
          
     
 </body>
