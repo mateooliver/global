@@ -103,6 +103,7 @@ html{
         height: 50vw;
     }
    
+   
     /* division de pantalla en movil */
     .divisionPantalla{
         display: block;
@@ -471,6 +472,36 @@ color: #808080;
         margin-top: 10%;
     }
     
+
+
+
+
+
+
+/* modal */
+/* fondo */
+.backgroundMobilModal{
+    overflow: hidden;
+    background-color: rgba(244, 244, 244, 0.1);
+    background-image: url("../img/backgroundMobileModal.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
-  
+/* contenido al medio */
+.containerMiddlePaso3{
+    margin: auto;
+    height: 90vh;
+    display: grid;
+    grid-template-rows: auto;
+    justify-content:center;
+    align-items: flex-start;
+  }
+
+  /* top */
+  .marginMobileModal{
+    margin-top: 9vh;
+}
+}
