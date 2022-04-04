@@ -30,7 +30,6 @@
             </div>
             <div class="bienvenidoGrid">
                 <div>
-                    <div id="gracias" class="genial" style="display: none;"><p >¡Genial<td class="signoExclamacion">!</td></p></div>
                     <div id="bienvenido" class="bienvenido bienvenidoMobile">Bienvenido a</div>
                     <img id="logo" class="logo360Bienvenido" src="./img/logo360.png" alt="logo">
                 </div>
@@ -58,16 +57,11 @@
             $("#cohete").show( "coheteMobile" )
             $("#cohete").addClass( "Animate" )
             $("#nubes").fadeOut("fast")
-             $("#bienvenido").hide("fast")
-             $("#logo2").hide("fast")
-             $("#logo").hide("fast")
-             $("#registrate").hide("fast")
-             $("#gracias").fadeIn("slow")
 
              setTimeout(()=>{
                 window.location.href="./pages/02.html"
-             },1700)
-     })
+             },800)
+     }) 
          </script>
     
 </body>
