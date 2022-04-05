@@ -1,26 +1,23 @@
 
     // paso 3 - cargar cajas 
-    $("#cargarCaja").click(()=>{
-        $("#input").hide()
-        $("#guardarCaja").hide()
-        $("#rootPaso3").hide();
-    $('#cajas').prepend(()=>{
-        return `<div class="d-flex"><input id="input" type="text"> <button class='btn backgroundBtn' id="guardarCaja"> aceptar</button></div>`
-    })
-    $('#guardarCaja').click(()=>{
+   
+    $('#cargarCaja').keypress((e)=>{
+       
+        if(e.which==13){
         if($("#input").val()!=""){
-            $("#input").hide()
-            $("#guardarCaja").hide()
-            $('#cajas').prepend(()=>{
-               return `<div class="d-flex justify-content-start align-items-center " style="margin:0 0 0 20%;"> <img class="mx-1"  style="height:9%; width:9%;" src="../img/user.png"/> <div class=" my-2 rounded-2" style=" padding:0 5% 0 2%; width: fit-content; background: #FBADB1; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-family: 'Nunito';font-style: normal;font-weight: 600; font-size:120%; text-align:left;  color: #446BD0;">${$("#input").val()}</div></div>`;
-      })}else{
-        $('#cajas').prepend(()=>{
+            $('#cajas').append(()=>{
+               return `<div class="d-flex  align-items-center " style=" margin-left:8%;" > <img class="mx-1"  style="height:10%; width:10%;" src="../img/tilde.png"/> <div class=" my-2" style="   width:70%; background: #836ED8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-family: 'Nunito';font-style: normal;font-weight: 600; font-size:120%; text-align:center;  color: white; border-radius:20px;">${$("#input").val()}</div></div>`;
+      })
+      $("#input").val("")
+    }else{
+        $('#cargarCaja').prepend(()=>{
+            $("#input").attr("placeholder", "")
             return`  <div id="error" class="mx-auto text-danger position-absolute">Debes completar esta caja</div> `
         })
         $("#error").delay(500).fadeOut(1000);
       }
-      })
-    });
+      }})
+    ;
 
 
     //   paso 1 condicion ante la afip
@@ -45,4 +42,49 @@
             $("#noEstoyInscripto").prop('checked', false);
             $("#siguientePaso1").attr("data-bs-target", "#paso2");
         });
-        
+// paso 1 quitae el modal
+
+
+// paso 4
+$('#cargarEgresos').keypress((e)=>{
+       
+    if(e.which==13){
+    if($("#inputEgresos").val()!=""){
+        $('#egresos').append(()=>{
+           return `<div class="d-flex  align-items-center " style=" margin-left:12%;" > <img class="mx-1"  style="height:20px; width:20px" src="../img/tilde.png"/> <div class=" my-2" style="   width:70%; background: #836ED8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-family: 'Nunito';font-style: normal;font-weight: 600; font-size:120%; text-align:center;  color: white; border-radius:20px;">${$("#inputEgresos").val()}</div></div>`;
+  })
+  $("#inputEgresos").val("")
+}else{
+    $('#cargarEgresos').prepend(()=>{
+        $("#inputEgresos").attr("placeholder", "")
+        return`  <div id="error" class="mx-auto text-danger position-absolute">Debes completar esta caja</div> `
+    })
+    $("#error").delay(500).fadeOut(1000);
+  }
+  }})
+;
+
+// paso 5
+$('#cargarIngresos').keypress((e)=>{
+       
+    if(e.which==13){
+    if($("#inputIngresos").val()!=""){
+        $('#Ingresos').append(()=>{
+           return `<div class="d-flex  align-items-center " style=" margin-left:12%;" > <img class="mx-1"  style="height:20px; width:20px" src="../img/tilde.png"/> <div class=" my-2" style="   width:70%; background: #836ED8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-family: 'Nunito';font-style: normal;font-weight: 600; font-size:120%; text-align:center;  color: white; border-radius:20px;">${$("#inputIngresos").val()}</div></div>`;
+  })
+  $("#inputIngresos").val("")
+}else{
+    $('#cargarIngresos').prepend(()=>{
+        $("#inputIngresos").attr("placeholder", "")
+        return`  <div id="error" class="mx-auto text-danger position-absolute">Debes completar esta caja</div> `
+    })
+    $("#error").delay(500).fadeOut(1000);
+  }
+  }})
+;
+// paso 6
+$('#otrasOpciones').click(()=>{
+        $('#Opciones').prepend(()=>{
+           return `<input id="inputIngresos" class="my-1" style="width: 70%; background: #F5F5F5;border: 3px solid #836ED8;box-sizing: border-box;box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);border-radius: 45px; " type="text" placeholder=" Otra Opcion"/>`;})
+});
+

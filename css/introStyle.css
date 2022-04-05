@@ -10,9 +10,10 @@ html{
 }
 
 .divisionPantalla{
+    margin: auto;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: 48vw 48vw;
 }
 .cohete{
     z-index: 1;
@@ -61,17 +62,7 @@ html{
     text-align: center;
     color: #4D53D9;
 }
-.genial{
- 
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 8vw;
-    line-height: 74.69%;
-    /* or 90px */
-    text-align: center;
-    color: #4D53D9;
-}
+
 
 
 .logo360Bienvenido{

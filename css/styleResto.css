@@ -27,7 +27,9 @@ background-repeat: no-repeat;
 }
 .sobre2{
     height: 60vh;
-    margin: 20% 0 0 10%;
+    margin: 10% 25% 0 0;
+    justify-self: center;
+    align-self: center;
 }
 /* animacion cuando solo hay imagen */
 @keyframes Animation {
@@ -132,14 +134,7 @@ background-repeat: no-repeat;
    
 }
 /* container paso 3 */
-.containerMiddlePaso3{
-  margin: auto;
-  height: 80vh;
-  display: grid;
-  grid-template-rows: auto;
-  justify-content:start;
-  align-items: flex-start;
-}
+
 .pregunta2{
     margin: auto;
     max-width: 90%;
@@ -153,11 +148,10 @@ background-repeat: no-repeat;
 .textoStyle{
    
     font-family: 'Nunito';
-    /* width: 80%; */
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 3vh;
     line-height: 108.19%;
     text-align: center;
     color: #353C73;
@@ -318,9 +312,7 @@ background-repeat: no-repeat;
     background-repeat: no-repeat;
  }
  .inputURL{
-
      margin: auto;
-     width:80%;
      height: 50px;
      border: 2px solid, #836ED8 ;
      border-radius: 50px;
@@ -357,6 +349,7 @@ color: #616161;}
 }
 /* pagina comenzar Ahora */
 .comenzarAhoraTxt{
+  
     font-family:'Nunito';
     font-style: normal;
     font-weight: 100;
@@ -367,6 +360,7 @@ color: #616161;}
 }
 /*  pagina 11 afip */
 .recuadro{
+
     
     background: rgba(242, 242, 242, 0.93);
     border: 3px solid #826BD7;
@@ -387,7 +381,7 @@ color: #616161;}
 font-family: 'Nunito';
 font-style: normal;
 font-weight: 400;
-font-size: 100%;
+font-size: 3vh;
 text-align: left;
 color: #808080;
 }
@@ -406,10 +400,10 @@ color: #808080;
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
-  font-size: 150%;
+  font-size: 2.5vh;
   line-height: 108.19%;
   text-align: center;
-  color: #727272;
+  color: #f0f0f0;
 }
 
  /* progress bar */
@@ -443,10 +437,102 @@ color: #808080;
   max-height: 100%;
 
 }
+.marginMobileModal{
+  margin-top: unset;
+}
 .modal .modal-content{
 padding: 0%;
 }
 .modal-content{
   border: none;
 
+}
+.divisionPantallaModal{
+  height: 95vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 48vw 48vw;
+ 
+}
+.ladoDerechoModal{
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto;
+ justify-content: center;
+ width: 100%;
+}
+.containerMiddlePaso3{
+  margin: auto;
+  height: 80vh;
+  display: grid;
+  grid-template-rows: auto;
+  justify-content:center;
+  align-self: flex-start;
+}
+.positionComenzarAhora{
+   margin-top: 10%;
+}
+.marginMobileModal{
+  margin-top: 5%;
+}
+/* paso 3 */
+
+.textIzquierdoModal{
+  display: block;
+  max-width: 70%;
+  margin: -10% auto 0 3%;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.5vh;
+  text-align: center;
+  color: #353C73;
+  justify-self: start;
+  align-self: center;
+  
+ }
+ .textIzquierdoModalPaso4{
+  display: block;
+  max-width: 70%;
+  margin: -15% auto 0 3%;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3vh;
+  text-align: center;
+  color: #353C73;
+  justify-self: start;
+  align-self: center;
+  
+ }
+ 
+ .ladoIzquierdoModal{
+  display: grid;
+  grid-template-rows: auto;
+  justify-content: center;
+
+}
+.items{
+  margin:-5% 0 0 23%;
+}
+
+.escribirAbajoInput{
+  font-size: 2.5vh; 
+  color:#353C73
+}
+.genial{
+  margin-top: 20%;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9vw;
+    line-height: 74.69%;
+    text-align: center;
+    color: #4D53D9;
+}
+.genialExclamacion{
+  font-size: 14vw;
+}
+.textPaso8{
+  font-size: 3vh;
 }
