@@ -1,132 +1,51 @@
-html{
-    font-family: 'Nunito', sans-serif;
-    background-color: rgba(244, 244, 244, 0.1s);
-}
 
-.boton{
-    position: absolute;
-    top: 70vh;
-    left: 69%;
-}
-.boton2{
-    position:relative
-
-}
-
-.backgroundBtn{
-
-    color: white;
-    border-style: none;
-    text-transform: capitalize;
-    font-weight: 300;
-    font-size: 20px;
-    background: linear-gradient(0.25turn, #826ad7, #98def3);
-    padding: 0.7% 2% 0.7% 2%;
-}
-.backgroundBtn:hover{
-    background: linear-gradient(0.25turn, #826ad7, #98def3);
-    filter: drop-shadow(10px 5px 5px #7d97f4);
-   
-}
-.backgroundBtn:active{
-    background: linear-gradient(0.25turn, #5e3fcc, #2989a6);
-
-}
-.icon{
-    height: 15vh;
-    width: auto;
-    margin: 3%;
- 
-}
-.inputs::placeholder{
-    color: #69828a;
-}
-.inputInline{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.input{
-    margin: auto;
-    max-width: 90%;
-}
-.inputs{
- 
-    color:#826ad7;
-    font-weight: 500;
-}
-.device{
-    max-width: 20vw;
-    display: flex;
-   flex-direction: row;
-   flex-wrap:nowrap;
-}
-
-.logoDevice{
-        display: none;
-    }
-
-.radius{
-    align-self: center;
-    justify-self: center;
-  
-}
-.radius{
-    margin: 30px 0 0 130px;
-}
-.radius2{
-    margin: 30px 0 0 230px;
-}
-.radius3{
-    margin: 30px 0 0 220px;
-}
-.mostrarMobile{
- display: none;
-}
-.logoDeviceFelicidades{
-    display: none;
-}
-.textoMobil{
-    display: none;
-}
 /* mobile */
 @media (max-width: 820px) {
         /* pagina inicio  */
   /* background */
     .backgroundMobil{
-        overflow: auto;
-        background-color: rgba(244, 244, 244, 0.1);
-        background-image: url("../img/backgroundMobile.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 50vw;
+           
+    background-color: rgba(244, 244, 244, 0.1);
+    background-image: url("../img/backgroundMobileModal.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
     }
    
    
     /* division de pantalla en movil */
     .divisionPantalla{
         display: block;
+      
     }
     .divisionPantallaModal{
         display: block;
     }
     .bienvenidoGrid{
+        height: 99vh;
+        width: 100%;
         margin-top: unset; 
         display: grid;
-        grid-template-rows: auto;
-        justify-content: center;
-        align-items: center;
+        grid-template-columns: auto;
+      
     }
 
     /* componentes */
-    .boton{
-        justify-self: center;
+    .botonModal{
+        padding: 8px;
+        width: fit-content;
+    }
+    .boton{ 
         position: unset;
-        padding: 15px;
+        top: unset;
+        left: unset;
+        padding: 10px;
         width: fit-content;
     }
     .bienvenidoMobile{
-        margin-top: 80vw;
+        margin: auto;
         text-align: center;
         font-size: 15vw;
     }
@@ -134,7 +53,7 @@ html{
         margin-top: 5%;
         text-align: center;
         width: fit-content;
-        justify-self: center;
+     
     } 
     .nubes{
        display: none;
@@ -264,11 +183,8 @@ margin-left: 20vw;
     width: 45vw;
 }
 .containerMiddleEstiloTienda{
-    margin-top: unset; 
-    display: grid;
-    grid-template-rows: auto;
-    justify-content: center;
-    align-items: center;
+    margin-top: -3%;
+
 }
 
 #carousel {
@@ -427,7 +343,7 @@ font-size: 100%;
 text-align: left;
 color: #808080;
 }
-/* AFIp */
+/* AFIp modal */
 .marginMobile{
     margin-top: 23%;
 }

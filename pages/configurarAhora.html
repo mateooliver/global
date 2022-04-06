@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cargar Logo - Nube360</title>
+    <title>Configurar Ahora - Nube360</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="../css/introStyle.css" rel="stylesheet">
     <link href="../css/styleResto.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/styleMobile.css" rel="stylesheet">
 </head>
 <body>
     <!-- modal general -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">ejecucion pop up configuracion</button>
+    <button type="button" class="btn backgroundBtn" data-bs-toggle="modal" data-bs-target="#myModal">ejecucion pop up configuracion</button>
                             
        
                 <!-- CONTENIDO MODAL PASO COMENZAR AHORA -->
@@ -111,7 +110,15 @@
                                                     </div>
                                                     <div>
                                                                  
-                                                        <a href='' data-bs-toggle="modal" data-bs-target="" id="siguientePaso1" class=""><button type="" id="" class="backgroundBtn botonMovil ">Siguiente</button></a>
+                                                        <a href='' data-bs-toggle="modal" data-bs-target="" id="siguientePaso1" class=""><button type="" id="" class="backgroundBtn botonMovil botonModal">Siguiente</button></a>
+                                                        
+                                                        <div class="my-4">
+                                                            <p class="progresoModal text-secondary ">10% completado</p>
+                                                            <div class="progress progresoBarModal">
+                                                              <div class="progress-bar rounded-3" role="progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                          </div>
+
                                                         <img class="mx-auto logoDevice" src="../img/logo360.png">  
                                                     </div>
                                             </div>
@@ -149,8 +156,13 @@
                             
                                                 </div>
                                                 <div>
-                                                    <a href='' data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#paso1-2" id="siguientePaso1" class=""><button type="button" id="" class="backgroundBtn botonMovil">Siguiente</button></a>
-                                                    
+                                                    <a href='' data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#paso1-2" id="siguientePaso1" class=""><button type="button" id="" class="backgroundBtn botonMovil botonModal">Siguiente</button></a>
+                                                    <div class="my-4">
+                                                        <p class="progresoModal text-secondary ">20% completado</p>
+                                                        <div class="progress progresoBarModal">
+                                                          <div class="progress-bar rounded-3" role="progressbar" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                      </div>
                                                     <img class="mx-auto logoDevice" src="../img/logo360.png">  
                                                 </div>
                                         </div>
@@ -167,7 +179,7 @@
                     <div class="modal-dialog modal-dialog-centered";>
                         <div class="modal-content">
                             <div class=" backgroundBienvenida backgroundMobilModal ">
-                            <div class="container-fluid divisionPantallaModal">
+                                <div class="container-fluid divisionPantallaModal">
                                     <!-- Lado izquierdo -->
                                     <div class="">
                                         <div ><img id="imagen" class="img-fluid sobre animate__animated animate__fadeInUp animate__slow moveMobil" src="../img/img11.png" alt=""></div>
@@ -181,15 +193,22 @@
                         
                                             <div class="containerMiddlePaso3 " >
                                                 <div class="marginMobileModal " style="align-self: center;" >
+                                                    <div style="width: 40vw; height: 1.5vh;"></div>
                                                     <div style=" font-family: 'Nunito'; font-style: normal;font-weight: 900;font-size: 200%;line-height: 108.19%;text-align: center;color: #353C73;">PASO 1</div>
-                                                    <div id="" class="textoStyle container-fluid my-3 " >Ingrese su DNI</div>
+                                                    <div id="" class="textoStyle container-fluid my-3 ">Ingresa tu Nº de Documento</div>
                                                     <!-- formulario -->
-                                                    <div class="container-fluid center row mt-3 mx-auto "   ><input class="inputURL " type="number" placeholder="D.N.I"> </div>
-                                                   
-                                                </div>
+                                                    <div class="container-fluid row mt-3 mx-auto "><input class="inputURL " type="number" placeholder="Ingresar DNI"> </div>
+                            
+                                                </div>                        
                                                 <div>
-                                                     
-                                                    <a href='' id="siguientePaso1" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#paso2" class=""><button type="button" id="" class="backgroundBtn botonMovil px-2">Siguiente</button></a>
+                                                    <a href='' id="siguientePaso1" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#paso2" class=""><button type="button" id="" class="backgroundBtn botonMovil botonModal">Siguiente</button></a>
+                                                    <div class="my-4">
+                                                        <p class="progresoModal text-secondary ">30% completado</p>
+                                                        <div class="progress progresoBarModal">
+                                                          <div class="progress-bar rounded-3" role="progressbar" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                      </div>
+                                                    
                                                     <img class="mx-auto logoDevice" src="../img/logo360.png">  
                             
                                                 </div>
@@ -242,7 +261,15 @@
                                                         </div>
                                                     </div>
                                                     <div>
-                                                        <a href='' data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#paso3" id="siguientePaso1" class=""><button type="button" id="" class="backgroundBtn botonMovil ">Siguiente</button></a>
+                                                        <a href='' data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#paso3" id="siguientePaso1" class=""><button type="button" id="" class="backgroundBtn botonMovil botonModal">Siguiente</button></a>
+                                                        <!-- progeso bar -->
+                                                        <div class="my-4">
+                                                            <p class="progresoModal text-secondary ">40% completado</p>
+                                                            <div class="progress progresoBarModal">
+                                                              <div class="progress-bar rounded-3" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                          </div>
+                                                        
                                                         <img class="mx-auto logoDevice" src="../img/logo360.png"> 
                                                     </div>
                                             </div>
@@ -253,7 +280,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- contenido del modal PASO 3 -->
+                <!-- paso 3 -->
                 <div class="modal modalFullscreen    " id="paso3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-keyboard="true"  >
                     <div class="modal-dialog modal-dialog-centered";>
                         <div class="modal-content">
@@ -289,7 +316,13 @@
                                                         </div>
                                                     </div>
                                                     <div>
-                                                        <a href='' data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#paso4" id="siguientePaso1" class=""><button type="button" id="" class="backgroundBtn botonMovil ">Siguiente</button></a>
+                                                        <a href='' data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#paso4" id="siguientePaso1" class=""><button type="button" id="" class="backgroundBtn botonMovil botonModal">Siguiente</button></a>
+                                                        <div class="my-4">
+                                                            <p class="progresoModal text-secondary ">50% completado</p>
+                                                            <div class="progress progresoBarModal">
+                                                              <div class="progress-bar rounded-3" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                          </div>
                                                         <img class="mx-auto logoDevice" src="../img/logo360.png"> 
                                                     </div>
                                             </div>
@@ -345,8 +378,14 @@
                                                     
                                                 </div>
                                                 <div>
-                                                    <a href='' data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#paso5" id="siguientePaso1" class=""><button type="button" id="" class="backgroundBtn botonMovil ">Siguiente</button></a>
-                                                    
+                                                    <a href='' data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#paso5" id="siguientePaso1" class=""><button type="button" id="" class="backgroundBtn botonMovil botonModal ">Siguiente</button></a>
+                                                    <!-- Progress bar -->
+                                                    <div class="my-4">
+                                                        <p class="progresoModal text-secondary ">60% completado</p>
+                                                        <div class="progress progresoBarModal">
+                                                          <div class="progress-bar rounded-3" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                      </div>
                                                     <img class="mx-auto logoDevice" src="../img/logo360.png">  
                             
                                                 </div>
@@ -404,8 +443,14 @@
                             
                                                 </div>
                                                 <div>
-                                                    <a href='' data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#paso6" id="siguientePaso1" class=""><button type="button" id="" class="backgroundBtn botonMovil ">Siguiente</button></a>
-                                                    
+                                                    <a href='' data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#paso6" id="siguientePaso1" class=""><button type="button" id="" class="backgroundBtn botonMovil botonModal">Siguiente</button></a>
+                                                     <!-- Progress bar -->
+                                                     <div class="my-4">
+                                                        <p class="progresoModal text-secondary ">70% completado</p>
+                                                        <div class="progress progresoBarModal">
+                                                          <div class="progress-bar rounded-3" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                      </div>
                                                     <img class="mx-auto logoDevice" src="../img/logo360.png"> 
                                                 </div>
                                             </div>
@@ -459,8 +504,14 @@
                             
                                                 </div>
                                                 <div>
-                                                    <a href='' data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#paso7" id="siguientePaso1" class=""><button type="button" id="" class="backgroundBtn botonMovil ">Siguiente</button></a>
-                                                    
+                                                    <a href='' data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#paso7" id="siguientePaso1" class=""><button type="button" id="" class="backgroundBtn botonMovil botonModal">Siguiente</button></a>
+                                                     <!-- Progress bar -->
+                                                     <div class="my-4">
+                                                        <p class="progresoModal text-secondary ">80% completado</p>
+                                                        <div class="progress progresoBarModal">
+                                                          <div class="progress-bar rounded-3" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                      </div>
                                                     <img class="mx-auto logoDevice" src="../img/logo360.png"> 
                                                 </div>
                                             </div>
@@ -515,8 +566,14 @@
                             
                                                 </div>
                                                 <div>
-                                                    <a href='' data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#paso8" id="siguientePaso1" class=""><button type="button" id="" class="backgroundBtn botonMovil ">Siguiente</button></a>
-                                                    
+                                                    <a href='' data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#paso8" id="siguientePaso1" class=""><button type="button" id="" class="backgroundBtn botonMovil botonModal">Siguiente</button></a>
+                                                     <!-- Progress bar -->
+                                                     <div class="my-4">
+                                                        <p class="progresoModal text-secondary ">90% completado</p>
+                                                        <div class="progress progresoBarModal">
+                                                          <div class="progress-bar rounded-3" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                      </div>
                                                     <img class="mx-auto logoDevice" src="../img/logo360.png"> 
                                                 </div>
                                             </div>
@@ -555,7 +612,14 @@
                                                     </div>
                                                     <div>
                                                                  
-                                                        <a href=''data-bs-dismiss="modal" id="siguientePaso1" class=""><button type="button" id="" class="backgroundBtn botonMovil ">Inicio</button></a>
+                                                        <a href=''data-bs-dismiss="modal" id="siguientePaso1" class=""><button type="button" id="" class="backgroundBtn botonMovil botonModal">Inicio</button></a>
+                                                         <!-- Progress bar -->
+                                                        <div class="my-4">
+                                                            <p class="progresoModal text-secondary ">100% completado</p>
+                                                            <div class="progress progresoBarModal">
+                                                            <div class="progress-bar rounded-3" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
                                                         <img class="mx-auto logoDevice" src="../img/logo360.png">  
                                                     </div>
                                             </div>

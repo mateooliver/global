@@ -4,6 +4,200 @@ html{
     height: 100vh;
   }
 
+.boton{
+    position: absolute;
+    top: 70vh;
+    left: 69%;
+}
+.boton2{
+    position:relative
+
+}
+
+.backgroundBtn{
+
+    color: white;
+    border-style: none;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 20px;
+    background: linear-gradient(0.25turn, #826ad7, #98def3);
+    padding: 0.7% 2% 0.7% 2%;
+}
+.backgroundBtn:hover{
+    background: linear-gradient(0.25turn, #826ad7, #98def3);
+    filter: drop-shadow(10px 5px 5px #7d97f4);
+   
+}
+.backgroundBtn:active{
+    background: linear-gradient(0.25turn, #5e3fcc, #2989a6);
+
+}
+.icon{
+    height: 15vh;
+    width: auto;
+    margin: 3%;
+ 
+}
+.inputs::placeholder{
+    color: #69828a;
+}
+.inputInline{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.input{
+    margin: auto;
+    max-width: 90%;
+}
+.inputs{
+ 
+    color:#826ad7;
+    font-weight: 500;
+}
+.device{
+    max-width: 20vw;
+    display: flex;
+   flex-direction: row;
+   flex-wrap:nowrap;
+}
+
+.logoDevice{
+        display: none;
+    }
+
+.radius{
+    align-self: center;
+    justify-self: center;
+  
+}
+.radius{
+    margin: 30px 0 0 130px;
+}
+.radius2{
+    margin: 30px 0 0 230px;
+}
+.radius3{
+    margin: 30px 0 0 220px;
+}
+.mostrarMobile{
+ display: none;
+}
+.logoDeviceFelicidades{
+    display: none;
+}
+.textoMobil{
+    display: none;
+}
+
+.backgroundBienvenida{
+background-image: url("../img/backgroundBienvenida.png");
+background-size:cover;
+background-repeat: no-repeat;
+}
+
+.divisionPantalla{
+margin: auto;
+overflow: hidden;
+display: grid;
+grid-template-columns: 48vw 48vw;
+}
+.cohete{
+z-index: 1;
+overflow:auto;
+margin: 49.9vh 0 0 10vh;
+height: 50vh;
+}
+
+@keyframes yourAnimation {
+0.0%{
+    transform: translate(0, -10vh);
+    opacity: 1;
+}
+100%{
+    transform: translate(0, -50vh);
+    opacity: 0;
+}
+}
+.Animate{
+animation: yourAnimation 2s ease 0s 1 normal forwards;
+}
+.nubes{
+display: block;
+position: absolute;
+left: 2vw;
+top: 2vw;
+width:auto;
+height: 100vh;
+
+}
+.bienvenidoGrid{
+
+display: grid;
+grid-template-rows:auto;
+align-items: center;
+justify-content: center;
+
+}
+.bienvenido{
+
+font-family:'Nunito';
+font-style: normal;
+font-weight: 100;
+font-size: 10vh;
+line-height: 75%;
+text-align: center;
+color: #4D53D9;
+}
+
+
+
+.logo360Bienvenido{
+height:50%;
+}
+/* Estilo de la carga */
+*,*::after,*::before{
+box-sizing:border-box;
+margin: 0;  
+padding: 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+}
+
+#contenedor_carga{
+background-color: rgb(244, 244, 244, 1);
+height: 100%;
+width: 100%;
+position: fixed;
+z-index: 1000;
+-webkit-transition: all 1% ease;
+-o-transition: all 1% ease;
+transition: all 1% ease;
+}
+#carga{
+border: 10px solid #a7a7a7;
+border-top-color:#4D53D9 ;
+border-top-style: groove;
+height: 50px;
+width: 50px;
+border-radius: 100%;
+position: absolute;
+top: 30%;
+left: 0;
+right: 0;
+bottom: 0;
+margin: auto;
+-webkit-animation: carga 1.5s linear infinite;
+-o-animation: carga 1.5s linear infinite;
+animation: carga 1.5s linear infinite;
+}
+@keyframes carga{
+from{ transform: rotate(0deg);}
+to{transform: rotate(360deg);}
+}
+  
+
+
 .background3{
 
 background-image: url("../img/background3.png");
@@ -126,11 +320,7 @@ background-repeat: no-repeat;
 
 }
 .containerMiddleEstiloTienda{
-    margin-top: auto;
-    display: unset;
-    grid-template-rows: unset;
-    justify-content: unset;
-    align-items: unset;
+    margin-top: 5%;
    
 }
 /* container paso 3 */
@@ -325,13 +515,18 @@ background-repeat: no-repeat;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
-    font-size: 6.5vw;
+    font-size: 5.5vw;
     line-height: 74.69%;
     text-align: center;
     color: #4D53D9;
  }
  .signoExclamacion{
-    font-size: 13vw;
+    font-size: 10vw;
+}
+.centrarFelicitaciones{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
  
 
@@ -421,6 +616,27 @@ color: #808080;
     font-size: 12px;
  }
 
+ /* progreso modal */
+ .progresoBarModal{
+  margin: auto;
+  position: unset;
+
+  top:unset;
+  left: unset;
+  width: 50%;
+  height: 16px;
+}
+.progresoModal{
+  justify-self: flex-end;
+ align-self: flex-end;
+  position: unset;
+  top:unset;
+  left: unset;
+ font-size: 10px;
+ text-align: center;
+  margin: auto;
+  width: fit-content;
+}
 
  /* modal */
  
@@ -455,6 +671,7 @@ padding: 0%;
  
 }
 .ladoDerechoModal{
+  overflow:auto;
   text-align: center;
   display: grid;
   grid-template-rows: auto;
