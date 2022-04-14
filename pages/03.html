@@ -25,7 +25,7 @@
             </div>
             <!-- Lado derecho -->
             <div class="ladoDerecho ">
-                    <img id="logo" class="logo" src="../img/logo360.png" alt="logo">
+                    <img id="logo" class="logo" src="../img/logoPlus.png" alt="logo">
                     <div class="containerMiddle">
                         <div>
                             <img id="" class="icon" src="../img/Sobre.png" alt="emailLogo">
@@ -34,7 +34,9 @@
                                 <form class="">
                                     <div  >
                                         <div class="input-field input">
-                                        <input id="first_name" required  placeholder="Ingrese un email" type="email" class="validate inputs center fs-4">
+                                            <img id="tilde" class="tilde d-none" src="../img/tilde.png" alt="aprove">
+                                        <div id="error" class="fs-6" style="position: absolute; top:-10%; left: 35%;"></div>
+                                        <input id="first_name"  required  placeholder="Ingrese un email" type="email" class="validate inputs center fs-4">
                                         </div>
                                     </div>
                                     <div class=" mostrarMobile mx-auto"><p class=" container-fluid ">Con este email podrás acceder al sistema como administrador y luego podrás crear todos los usuarios que quieres para tu empresa.</p>
@@ -60,6 +62,18 @@
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
          </script>
-     
+         <script>
+           
+               $("#first_name").focusout(function (){
+                    if(($("#first_name").val() != "") && ($("#first_name").val().includes( "@"))){
+                        $("#tilde").removeClass("d-none");
+                    }else{
+                    $("#error").append("<p class='text-danger'>Ingrese un email valido</p>");
+                    $("#first_name").attr("placeholder", "");
+                    $("#error").delay(1000).fadeOut();
+                    $("#first_name").attr("placeholder", "Ingrese un email valido, recuerde que debe contener @");
+                    }
+                });
+         </script>
 </body>
 </html>

@@ -25,7 +25,7 @@
             <!-- Lado derecho -->
             <div class="ladoDerecho ">
         
-                        <img id="logo" class="logo" src="../img/logo360.png" alt="logo">
+                        <img id="logo" class="logo" src="../img/logoPlus.png" alt="logo">
                     <div class="containerMiddle">
                         <div>
                         <img id="" class="icon" src="../img/icon4.png" alt="emailLogo">
@@ -53,8 +53,15 @@
                         
                                     </div>
                                     <div class="my-3"  >
-                                        <input id="upFile" type="file" style="display: none;"/>
+                                        <div id="upFile" style="display: none;">
+                                            <input class="file"  type="file" />
+                                        </div>
+                                        <div id="cargoExito" class="mt-2" style="display: none;">
+                                            <img src="../img/tilde.png" id="" alt="" >
+                                            <p class="text-secondary fs-6 mt-2"> Tu archivo se cargo con exito</p>
+                                        </div>
                                         <a  href="../pages/05.html"><button type="button" style="display: none;" id="siguiente" class=" backgroundBtn  botonMovil boton ">Siguiente</button></a>
+                                    
                                     </div>
                                 </form>
                             </div>
@@ -87,6 +94,17 @@
             $("#upFile").hide()
             $("#siguiente").fadeIn()
          })
+
+         
+             $(".file").change(function(e){
+                var fileName = e.target.files[0].name;
+                $("#upFile").hide()
+                $("#cargoExito").show()
+
+               
+             })
+        
      </script>
+
 </body>
 </html>
