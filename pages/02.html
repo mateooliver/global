@@ -26,20 +26,22 @@
         <!-- Lado derecho -->
         <div class="ladoDerecho ">  
                 <!-- seccion 1 -->  
-                <img class=" logo" src="../img/logo360.png">
+                <img class=" logo" src="../img/logoPlus.png">
                  <!-- seccion 2 -->
                  <div class="containerMiddle">
                    <div>
                   <img class="icon" src="../img/user.png" alt="">
-                    <div class="center"><h3 class="pregunta2">¿Cual es tu nombre y apellido?</h3>
+                    <div class="center"><h3 class="pregunta2">¿Cual es tu Nombre y Apellido?</h3>
                       <form class="">
                          <div class=" py-4 inputInline">
-                              <div class="input-field input ">
-                                <input id="first_name" required  placeholder="Nombre" type="text" class="validate inputs center fs-4">
+                              <div class="input-field input " >
+                                <img id="tilde" class="tilde d-none" src="../img/tilde.png" alt="aprove">
+                                <input id="first_name" required  placeholder="Nombre" type="text" class=" inputs center fs-4">
                               </div>
 
                               <div class="input-field input ">
-                                <input id="last_name " type="text" required placeholder="Apellido" class="validate inputs center fs-4">
+                                <img id="tilde2" class="tilde d-none" src="../img/tilde.png" alt="aprove">
+                                <input id="last_name" type="text" required placeholder="Apellido" class="validate inputs center fs-4">
                               </div>
                           </div>
                           <div>
@@ -65,6 +67,22 @@
 
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $("#first_name").focusout(function(){
+        if($("#first_name").val() != ""){
+          $("#tilde").removeClass("d-none");
+        }else{
+          $("#first_name").removeClass("valid");
+        }
+      });
 
+      $("#last_name").focusout(function(){
+        if($("#last_name").val() != ""){
+          $("#tilde2").removeClass("d-none");
+        }else{
+          $("#flast_name").removeClass("valid");
+        }
+      });
+    </script>
 </body>
 </html>
