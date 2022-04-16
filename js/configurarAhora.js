@@ -6,7 +6,7 @@
         if(e.which==13){
         if($("#input").val()!=""){
             $('#cajas').append(()=>{
-               return `<div class="d-flex  align-items-center " style=" margin-left:8%;" > <img class="mx-1"  style="height:10%; width:10%;" src="../img/tilde.png"/> <div class=" my-2" style="   width:70%; background: #836ED8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-family: 'Nunito';font-style: normal;font-weight: 600; font-size:120%; text-align:center;  color: white; border-radius:20px;">${$("#input").val()}</div></div>`;
+               return `<div class="d-flex  align-items-center " > <img class="posicion_signo_mas" src="../img/tilde.png"/><div style="background: #836ED8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-family: 'Nunito';font-style: normal;font-weight: 600; font-size:120%; text-align:center;  color: white; border-radius:20px; padding:0 3% 0 3%;" class="align-items-center my-1"> <div class=" d-flex align-items-center"><div>${$("#input").val()}</div> <img style=" height:13px; width:auto; padding:0 3% 0 25px;" src="../img/puntospaso3.png"></div> </div></div>`;
       })
       $("#input").val("")
     }else{
@@ -19,6 +19,21 @@
       }})
     ;
 
+    $('.posicion_signo_mas').click(()=>{
+        if($("#input").val()!=""){
+            $('#cajas').append(()=>{
+                return `<div class="d-flex  align-items-center " > <img class="posicion_signo_mas" src="../img/tilde.png"/><div style="background: #836ED8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-family: 'Nunito';font-style: normal;font-weight: 600; font-size:120%; text-align:center;  color: white; border-radius:20px; padding:0 3% 0 3%;" class="align-items-center my-1"> <div class=" d-flex align-items-center"><div>${$("#input").val()}</div> <img style=" height:13px; width:auto; padding:0 3% 0 25px;" src="../img/puntospaso3.png"></div> </div></div>`;
+            })
+      $("#input").val("")
+    }else{
+        $('#cargarCaja').prepend(()=>{
+            $("#input").attr("placeholder", "")
+            return`  <div id="error" class="mx-auto text-danger position-absolute">Debes completar esta caja</div> `
+        })
+        $("#error").delay(500).fadeOut(1000);
+      }
+      })
+    ;
 
     //   paso 1 condicion ante la afip
     $("#noEstoyInscripto").on('change', function(ev){
@@ -43,6 +58,19 @@
             $("#siguientePaso1").attr("data-bs-target", "#paso2");
         });
 // paso 1 quitae el modal
+
+// paso 2 iva incuiido o no, cambio de imagen
+$("#siIva").on('change', function(ev){
+    ev.preventDefault();
+    $("#siIva").prop('checked', true);
+    $("#noIva").prop("checked", false);
+});
+$("#noIva").on('change', function(ev){
+    ev.preventDefault();
+    $("#siIva").prop('checked', false);
+    $("#noIva").prop("checked", true);
+    $("#conIva").attr("src", "../img/Noiva.png");
+});
 
 
 // paso 4

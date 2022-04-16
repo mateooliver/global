@@ -309,11 +309,10 @@ to{transform: rotate(360deg);}
 }
 .logo2{
     position: absolute;
-    left: 35%;
-    right: 21.65%;
+    left: 37%;
     top: 3%;
     bottom: 88.43%;
-    width: 15vw;
+    width: 10vw;
 
 }
 .containerMiddle{
@@ -347,8 +346,8 @@ to{transform: rotate(360deg);}
     font-family: 'Nunito';
     font-family: 'Nunito';
     font-style: normal;
-    font-weight: 400;
-    font-size: 3vh;
+    font-weight: 100;
+    font-size: 2.7vh;
     line-height: 108.19%;
     text-align: center;
     color: #353C73;
@@ -559,14 +558,18 @@ color: #616161;}
 }
 /* pagina comenzar Ahora */
 .comenzarAhoraTxt{
-  
+  margin: 3% 0 3% 0;
     font-family:'Nunito';
     font-style: normal;
     font-weight: 100;
-    font-size: 10vh;
+    font-size: 9vh;
     line-height: 75%;
     text-align: center;
     color: #4D53D9;
+}
+.iconModal{
+  height: 20vh;
+  width: auto; 
 }
 /*  pagina 11 afip */
 .recuadro{
@@ -587,10 +590,10 @@ color: #616161;}
     color: #353C73;
 }
 .form-check{
-    margin-left: 35%;
+    margin-left: 27%;
 font-family: 'Nunito';
 font-style: normal;
-font-weight: 400;
+font-weight: 200;
 font-size: 3vh;
 text-align: left;
 color: #808080;
@@ -668,9 +671,7 @@ color: #808080;
   max-height: 100%;
 
 }
-.marginMobileModal{
-  margin-top: unset;
-}
+
 .modal .modal-content{
 padding: 0%;
 }
@@ -685,6 +686,13 @@ padding: 0%;
   grid-template-columns: 48vw 48vw;
  
 }
+.logoModal{
+  position: absolute;
+  left: 70%;
+  top: 4%;
+  bottom: 88.43%;
+  width: 10vw;
+}
 .ladoDerechoModal{
   overflow:auto;
   text-align: center;
@@ -692,10 +700,12 @@ padding: 0%;
   grid-template-rows: auto;
  justify-content: center;
  width: 100%;
+ height: 98vh;
 }
 .containerMiddlePaso3{
   margin: auto;
   height: 80vh;
+  width: 47vw;
   display: grid;
   grid-template-rows: auto;
   justify-content:center;
@@ -705,9 +715,79 @@ padding: 0%;
    margin-top: 10%;
 }
 .marginMobileModal{
-  margin-top: 5%;
+  margin-top: unset;
+}
+.textoStylePasos{
+  font-family: 'Nunito';
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3.5vh;
+  line-height: 108.19%;
+  text-align: center;
+  color: #353C73;
+}
+/* paso 1 */
+.form-check{}
+/* paso nombre de tu emprendimiento */
+.textoStylePaso1Nombre{
+  width: 60%;
+  font-family: 'Nunito';
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.5vh;
+    line-height: 108.19%;
+    text-align: center;
+    color: #353C73;
+}
+
+.inputURLModal{
+  width: 85%;
+  margin: auto;
+  height: 38px;
+  border: 2px solid #836ED8 ;
+  border-radius: 50px;
+  outline:#836ED8;
+  color: #836ED8;
+}
+.paso1-1{
+  margin-top: 12%;
+}
+.posicionBotonPaso1_1{
+  margin-top: 30vh;
+}
+/* paso 1-2 */
+.posicionBotonPaso1_2{
+  margin-top: 33vh;
+}
+/* pagina 2 */
+.anchoTextoPaso2{
+  width: 70%;
+
 }
 /* paso 3 */
+.posicion_signo_mas{
+  margin: auto 3% auto 0;
+  width:15px; 
+  height: 15px;
+}
+.cargarCaja{
+position: relative;
+ left: 8%;
+ top: 8%;
+}
+.cargarCaja input{
+  width: 55%;
+  height: 35px;
+}
+
+.escribirAbajoInput{
+  text-align: start;
+  margin: 0 0 0 9%;
+  font-size: 2.3vh; 
+  color:#353C73
+}
 
 .textIzquierdoModal{
   display: block;
@@ -748,10 +828,7 @@ padding: 0%;
   margin:-5% 0 0 23%;
 }
 
-.escribirAbajoInput{
-  font-size: 2.5vh; 
-  color:#353C73
-}
+
 .genial{
   margin-top: 20%;
     font-family: 'Nunito';
