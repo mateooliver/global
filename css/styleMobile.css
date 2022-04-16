@@ -2,6 +2,7 @@
 /* mobile */
 @media (max-width: 820px) {
         /* pagina inicio  */
+
   /* background */
     .backgroundMobil{
            
@@ -333,6 +334,11 @@ color: #616161;
     line-height: 108.19%;
   
 }
+.textoStylePaso1Nombre{
+        width: 90vw;
+        font-size: 18px;
+}
+
 /* paso 1 */
 .form-check{
     margin-left:20%;
@@ -372,7 +378,13 @@ color: #808080;
     height: 100px;
     justify-self: center
 }
-
+.iconModal{
+    margin-top: 30%;
+    display: unset;
+    position: unset;
+    height: 100px;
+    justify-self: center
+}
  /* Reposicion del logo abajo */
     .logo{
         display: none;
@@ -383,7 +395,9 @@ color: #808080;
         height: auto;
         margin-top: 10%;
     }
-    
+    .logoModal{
+        display: none;
+    }
 
 
 
@@ -405,6 +419,7 @@ color: #808080;
 /* contenido al medio */
 .containerMiddlePaso3{
     height: 100%;
+    width: 99vw;
     margin: auto;
     display: unset;
     grid-template-rows: unset;
@@ -425,7 +440,22 @@ color: #808080;
 .marginMobileModal{
     margin-top: 20%;
 }
+.posicionBotonPaso1_1{
+    margin-top: 3vh;
+}
+.posicionBotonPaso1_2{
+    margin-top: 3vh;
+}
+.cargarCaja{
+    position: unset;
+    margin:3vh 0 0 20vw;
+}
   /*  texto */
+  
+  .textoStylePasos{
+      width: 90vw;
+    font-size: 20px;
+  }
   .textoStyle{
       font-size: 16px;
       }
@@ -460,9 +490,11 @@ color: #808080;
         display: none;
     }
     .escribirAbajoInput{
-        font-size: 10px; 
+        margin: 3vw 0 3vw 9vw;
         color:#353C73;
-        margin-bottom: 5%;
+        font-size: 10px; 
+        
+ 
         
     }
     .ladoIzquierdoModal{

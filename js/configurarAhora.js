@@ -6,7 +6,7 @@
         if(e.which==13){
         if($("#input").val()!=""){
             $('#cajas').append(()=>{
-               return `<div class="d-flex  align-items-center " > <img class="posicion_signo_mas" src="../img/tilde.png"/><div style="background: #836ED8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-family: 'Nunito';font-style: normal;font-weight: 600; font-size:120%; text-align:center;  color: white; border-radius:20px; padding:0 3% 0 3%;" class="align-items-center my-1"> <div class=" d-flex align-items-center"><div>${$("#input").val()}</div> <img style=" height:13px; width:auto; padding:0 3% 0 25px;" src="../img/puntospaso3.png"></div> </div></div>`;
+               return `<div class="d-flex  align-items-center " > <img class="posicion_signo_mas" src="../img/tilde.png"/><div style="background: #836ED8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-family: 'Nunito';font-style: normal;font-weight: 400; font-size:120%; text-align:center;  color: white; border-radius:20px; padding:0 3% 0 3%;" class="align-items-center my-1"> <div class=" d-flex align-items-center"><div class="text-nowrap">${$("#input").val()}</div> <img style=" height:13px; width:auto; padding:0 3% 0 25px;" src="../img/puntospaso3.png"></div> </div></div>`;
       })
       $("#input").val("")
     }else{
@@ -18,11 +18,11 @@
       }
       }})
     ;
-
-    $('.posicion_signo_mas').click(()=>{
+// cargar cajas con un click en el signo mas
+    $('#masCajas').click(()=>{
         if($("#input").val()!=""){
             $('#cajas').append(()=>{
-                return `<div class="d-flex  align-items-center " > <img class="posicion_signo_mas" src="../img/tilde.png"/><div style="background: #836ED8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-family: 'Nunito';font-style: normal;font-weight: 600; font-size:120%; text-align:center;  color: white; border-radius:20px; padding:0 3% 0 3%;" class="align-items-center my-1"> <div class=" d-flex align-items-center"><div>${$("#input").val()}</div> <img style=" height:13px; width:auto; padding:0 3% 0 25px;" src="../img/puntospaso3.png"></div> </div></div>`;
+                return `<div class="d-flex  align-items-center " > <img class="posicion_signo_mas" src="../img/tilde.png"/><div style="background: #836ED8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-family: 'Nunito';font-style: normal;font-weight: 400; font-size:120%; text-align:center;  color: white; border-radius:20px; padding:0 3% 0 3%;" class="align-items-center my-1"> <div class=" d-flex align-items-center"><div class="text-nowrap">${$("#input").val()}</div> <img style=" height:13px; width:auto; padding:0 3% 0 25px;" src="../img/puntospaso3.png"></div> </div></div>`;
             })
       $("#input").val("")
     }else{
@@ -79,8 +79,8 @@ $('#cargarEgresos').keypress((e)=>{
     if(e.which==13){
     if($("#inputEgresos").val()!=""){
         $('#egresos').append(()=>{
-           return `<div class="d-flex  align-items-center " style=" margin-left:12%;" > <img class="mx-1"  style="height:20px; width:20px" src="../img/tilde.png"/> <div class=" my-2" style="   width:70%; background: #836ED8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-family: 'Nunito';font-style: normal;font-weight: 600; font-size:120%; text-align:center;  color: white; border-radius:20px;">${$("#inputEgresos").val()}</div></div>`;
-  })
+            return `<div class="d-flex  align-items-center " > <img class="posicion_signo_mas" src="../img/tilde.png"/><div style="background: #836ED8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-family: 'Nunito';font-style: normal;font-weight: 400; font-size:120%; text-align:center;  color: white; border-radius:20px; padding:0 3% 0 3%;" class="align-items-center my-1"> <div class=" d-flex align-items-center"><div class="text-nowrap">${$("#inputEgresos").val()}</div> <img style=" height:13px; width:auto; padding:0 3% 0 25px;" src="../img/puntospaso3.png"></div> </div></div>`;
+        })
   $("#inputEgresos").val("")
 }else{
     $('#cargarEgresos').prepend(()=>{
@@ -91,6 +91,22 @@ $('#cargarEgresos').keypress((e)=>{
   }
   }})
 ;
+$('#masEgresos').click(()=>{
+
+    if($("#inputEgresos").val()!=""){
+        $('#egresos').append(()=>{
+            return `<div class="d-flex  align-items-center " > <img class="posicion_signo_mas" src="../img/tilde.png"/><div style="background: #836ED8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-family: 'Nunito';font-style: normal;font-weight: 400; font-size:120%; text-align:center;  color: white; border-radius:20px; padding:0 3% 0 3%;" class="align-items-center my-1"> <div class=" d-flex align-items-center"><div class="text-nowrap">${$("#inputEgresos").val()}</div> <img style=" height:13px; width:auto; padding:0 3% 0 25px;" src="../img/puntospaso3.png"></div> </div></div>`;
+        })
+  $("#inputEgresos").val("")
+}else{
+    $('#cargarEgresos').prepend(()=>{
+        $("#inputEgresos").attr("placeholder", "")
+        return`  <div id="error" class="mx-auto text-danger position-absolute">Debes completar esta caja</div> `
+    })
+    $("#error").delay(500).fadeOut(1000);
+  }
+  })
+;
 
 // paso 5
 $('#cargarIngresos').keypress((e)=>{
@@ -98,7 +114,7 @@ $('#cargarIngresos').keypress((e)=>{
     if(e.which==13){
     if($("#inputIngresos").val()!=""){
         $('#Ingresos').append(()=>{
-           return `<div class="d-flex  align-items-center " style=" margin-left:12%;" > <img class="mx-1"  style="height:20px; width:20px" src="../img/tilde.png"/> <div class=" my-2" style="   width:70%; background: #836ED8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-family: 'Nunito';font-style: normal;font-weight: 600; font-size:120%; text-align:center;  color: white; border-radius:20px;">${$("#inputIngresos").val()}</div></div>`;
+               return `<div class="d-flex  align-items-center " > <img class="posicion_signo_mas" src="../img/tilde.png"/><div style="background: #836ED8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-family: 'Nunito';font-style: normal;font-weight: 600; font-size:120%; text-align:center;  color: white; border-radius:20px; padding:0 3% 0 3%;" class="align-items-center my-1"> <div class=" d-flex align-items-center"><div class="text-nowrap">${$("#inputIngresos").val()}</div> <img style=" height:13px; width:auto; padding:0 3% 0 25px;" src="../img/puntospaso3.png"></div> </div></div>`;
   })
   $("#inputIngresos").val("")
 }else{
@@ -110,7 +126,57 @@ $('#cargarIngresos').keypress((e)=>{
   }
   }})
 ;
-// paso 6
+$('#masIngresos').click((e)=>{
+    
+    if($("#inputIngresos").val()!=""){
+        $('#Ingresos').append(()=>{
+               return `<div class="d-flex  align-items-center " > <img class="posicion_signo_mas" src="../img/tilde.png"/><div style="background: #836ED8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-family: 'Nunito';font-style: normal;font-weight: 600; font-size:120%; text-align:center;  color: white; border-radius:20px; padding:0 3% 0 3%;" class="align-items-center my-1"> <div class=" d-flex align-items-center"><div class="text-nowrap">${$("#inputIngresos").val()}</div> <img style=" height:13px; width:auto; padding:0 3% 0 25px;" src="../img/puntospaso3.png"></div> </div></div>`;
+  })
+  $("#inputIngresos").val("")
+}else{
+    $('#cargarIngresos').prepend(()=>{
+        $("#inputIngresos").attr("placeholder", "")
+        return`  <div id="error" class="mx-auto text-danger position-absolute">Debes completar esta caja</div> `
+    })
+    $("#error").delay(500).fadeOut(1000);
+  }
+  })
+;
+// paso 6 
+$('#cargarProducto').keypress((e)=>{
+       
+    if(e.which==13){
+    if($("#inputProducto").val()!=""){
+        $('#Producto').append(()=>{
+               return `<div class="d-flex  align-items-center " > <img class="posicion_signo_mas" src="../img/tilde.png"/><div style="background: #836ED8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-family: 'Nunito';font-style: normal;font-weight: 600; font-size:120%; text-align:center;  color: white; border-radius:20px; padding:0 3% 0 3%;" class="align-items-center my-1"> <div class=" d-flex align-items-center"><div class="text-nowrap">${$("#inputProducto").val()}</div> <img style=" height:13px; width:auto; padding:0 3% 0 25px;" src="../img/puntospaso3.png"></div> </div></div>`;
+  })
+  $("#inputProducto").val("")
+}else{
+    $('#cargarProducto').prepend(()=>{
+        $("#inputProducto").attr("placeholder", "")
+        return`  <div id="error" class="mx-auto text-danger position-absolute">Debes completar esta caja</div> `
+    })
+    $("#error").delay(500).fadeOut(1000);
+  }
+  }})
+;
+$('#masProducto').click((e)=>{
+    
+    if($("#inputProducto").val()!=""){
+        $('#Producto').append(()=>{
+               return `<div class="d-flex  align-items-center " > <img class="posicion_signo_mas" src="../img/tilde.png"/><div style="background: #836ED8; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-family: 'Nunito';font-style: normal;font-weight: 600; font-size:120%; text-align:center;  color: white; border-radius:20px; padding:0 3% 0 3%;" class="align-items-center my-1"> <div class=" d-flex align-items-center"><div class="text-nowrap">${$("#inputProducto").val()}</div> <img style=" height:13px; width:auto; padding:0 3% 0 25px;" src="../img/puntospaso3.png"></div> </div></div>`;
+  })
+  $("#inputProducto").val("")
+}else{
+    $('#cargarProducto').prepend(()=>{
+        $("#inputProducto").attr("placeholder", "")
+        return`  <div id="error" class="mx-auto text-danger position-absolute">Debes completar esta caja</div> `
+    })
+    $("#error").delay(500).fadeOut(1000);
+  }
+  })
+;
+// paso 7
 $('#otrasOpciones').click(()=>{
         $('#Opciones').prepend(()=>{
            return `<input id="inputIngresos" class="my-1" style="width: 70%; background: #F5F5F5;border: 3px solid #836ED8;box-sizing: border-box;box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);border-radius: 45px; " type="text" placeholder=" Otra Opcion"/>`;})
