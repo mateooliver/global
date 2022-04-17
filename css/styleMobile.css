@@ -74,7 +74,7 @@
     }
     .progreso{
        
-        position: unset;
+        position: none;
         top:unset;
         left: unset;
        font-size: 10px;
@@ -418,7 +418,7 @@ color: #808080;
 
 /* contenido al medio */
 .containerMiddlePaso3{
-    height: 100%;
+    overflow: scroll;
     width: 99vw;
     margin: auto;
     display: unset;
@@ -428,10 +428,12 @@ color: #808080;
   }
   /* Lado derecho modal */
   .ladoDerechoModal{
+      overflow: hidden;
     text-align: center;
     display: grid;
     grid-template-rows: auto;
    justify-content: center;
+   height: fit-content;
   }
   .positionComenzarAhora{
     margin-top: unset;
