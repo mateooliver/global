@@ -504,11 +504,12 @@ color: #808080;
   }
   /* Lado derecho modal */
   .ladoDerechoModal{
-      overflow: hidden;
+      margin-top: 23%;
     text-align: center;
     display: grid;
     grid-template-rows: auto;
    justify-content: center;
+   height: fit-content;
   }
   .positionComenzarAhora{
     margin-top: unset;
@@ -516,7 +517,7 @@ color: #808080;
  
 /* top */
 .marginMobileModal{
-    margin-top: 30%;
+    margin-top: 0%;
 }
 .posicionBotonPaso1_1{
     margin-top: 3vh;
