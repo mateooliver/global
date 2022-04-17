@@ -476,9 +476,9 @@ color: #808080;
 
 /* modal */
 /* fondo */
-/* .modal-content .backgroundMobilModal{
+.modal-content .backgroundMobilModal{
     margin-top: 5%;
-} */
+}
 
 .backgroundMobilModal{
     width: 100%;
@@ -495,7 +495,7 @@ color: #808080;
 .containerMiddlePaso3{
     overflow: scroll;
     width: 99vw;
-    height: 80vh;
+    height: 75vh;
     margin: auto;
     display: unset;
     grid-template-rows: unset;
@@ -504,7 +504,6 @@ color: #808080;
   }
   /* Lado derecho modal */
   .ladoDerechoModal{
-      margin-top: 23%;
     text-align: center;
     display: grid;
     grid-template-rows: auto;
@@ -517,7 +516,7 @@ color: #808080;
  
 /* top */
 .marginMobileModal{
-    margin-top: 0%;
+    margin-top: 30%;
 }
 .posicionBotonPaso1_1{
     margin-top: 3vh;
