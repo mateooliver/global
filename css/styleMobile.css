@@ -160,6 +160,16 @@
    .ladoIzquierdo{
     display:unset;
    }
+   .sobre{
+    height:160px;
+    width:130px;
+    margin:-8% auto 0 5%;
+}
+   .sobre2{
+    height:160px;
+    width:130px;
+    margin:-8% auto 0 5%;
+}
     .ladoDerecho{
         width: 99vw;
     display: unset;
@@ -460,6 +470,9 @@ color: #808080;
 
 
 /* modal */
+.modal-content .backgroundMobilModal{
+margin-top: 2%;  
+  }
 /* fondo */
 .backgroundMobilModal{
     
@@ -494,9 +507,12 @@ color: #808080;
   .positionComenzarAhora{
     margin-top: unset;
   }
+  .paso4{
+    margin-top: unset;
+  }
 /* top */
 .marginMobileModal{
-    margin-top: 20%;
+    margin-top: 30%;
 }
 .posicionBotonPaso1_1{
     margin-top: 3vh;
