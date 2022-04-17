@@ -493,10 +493,11 @@ color: #808080;
 
 /* contenido al medio */
 .containerMiddlePaso3{
+    
     overflow: scroll;
     width: 99vw;
     height: 75vh;
-    margin: auto;
+    margin: 22% auto 0 auto;
     display: unset;
     grid-template-rows: unset;
     justify-content:unset;
@@ -511,12 +512,12 @@ color: #808080;
    height: fit-content;
   }
   .positionComenzarAhora{
-    margin-top: unset;
+    margin-top: -15%;
   }
  
 /* top */
 .marginMobileModal{
-    margin-top: 30%;
+    margin-top: 0%;
 }
 .posicionBotonPaso1_1{
     margin-top: 3vh;
