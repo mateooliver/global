@@ -472,11 +472,11 @@ color: #808080;
 /* modal */
 /* fondo */
 .backgroundMobilModal{
-    
+    height: max-content;
     background-color: rgba(244, 244, 244, 0.1);
     background-image: url("../img/backgroundMobileModal.png");
     background-position: top;
-    background-size: cover;
+    background-size:contain;
     background-repeat: no-repeat;
  
 }
