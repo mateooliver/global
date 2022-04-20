@@ -494,6 +494,10 @@ color: #808080;
 }
 
 /* contenido al medio */
+.recuadroPaso3{
+    width: 80vw;
+    margin: auto;
+}
 .containerMiddlePaso3{
     
     overflow: scroll;
@@ -529,7 +533,7 @@ color: #808080;
 }
 .cargarCaja{
     position: unset;
-    margin:3vh 0 0 20vw;
+    margin:3vh 0 3vh 20vw;
 }
   /*  texto */
   

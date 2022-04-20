@@ -766,6 +766,9 @@ padding: 0%;
 
 }
 /* paso 3 */
+.recuadroPaso3{
+  margin: auto;
+}
 .posicionBotonPaso3{
   margin-top: 10vh;
 }
@@ -778,6 +781,7 @@ padding: 0%;
 position: relative;
  left: 8%;
  top: 8%;
+ margin-bottom: 10vh;
 
 }
 #input{
