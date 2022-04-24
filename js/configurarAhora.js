@@ -177,8 +177,24 @@ $('#masProducto').click((e)=>{
   })
 ;
 // paso 7
+
 $('#otrasOpciones').click(()=>{
+    $('#otrasOpciones').removeClass("d-flex")
+    $('#otrasOpciones').hide()
+    $("#paso7Texto").hide()
+    $(".none").hide()
+    $("#masOpciones").show()
+    $("#masOpciones").addClass("d-flex")
         $('#Opciones').prepend(()=>{
-           return `<input id="inputIngresos" class="my-1" style="width: 70%; background: #F5F5F5;border: 3px solid #836ED8;box-sizing: border-box;box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);border-radius: 45px; " type="text" placeholder=" Otra Opcion"/>`;})
+           return `<input id="inputIngresos" class="inputPaso4 my-1" style=" padding-left: 2%; background: #F5F5F5;border: 2px solid #836ED8;box-sizing: border-box;box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);border-radius: 45px; " type="text" placeholder=" Categoría de producto"/>
+           <input id="inputIngresos" class="inputPaso4 my-1" style=" padding-left: 2%; background: #F5F5F5;border: 2px solid #836ED8;box-sizing: border-box;box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);border-radius: 45px; " type="text" placeholder=" Cantidad de Stock"/>
+           <input id="inputIngresos" class="inputPaso4 my-1" style=" padding-left: 2%; background: #F5F5F5;border: 2px solid #836ED8;box-sizing: border-box;box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);border-radius: 45px; " type="text" placeholder=" Precio de compra"/>
+           <input id="inputIngresos" class="inputPaso4 my-1" style=" padding-left: 2%; background: #F5F5F5;border: 2px solid #836ED8;box-sizing: border-box;box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);border-radius: 45px; " type="text" placeholder=" Precio de venta"/>
+           `;})
 });
+$("#masOpciones").click(()=>{
+  
+    $('#Opciones').append(()=>{
+        return `<input id="inputIngresos" class="inputPaso4 my-1" style=" padding-left: 2%; background: #F5F5F5;border: 2px solid #836ED8;box-sizing: border-box;box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);border-radius: 45px; " type="text" placeholder=" Categoría de producto"/> `;})
+})
 

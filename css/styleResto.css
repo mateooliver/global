@@ -831,8 +831,14 @@ position: relative;
  }
  .inputPaso4{
    width: 55%;
- height: 35px;
+ height: 40px;
  max-width: 100%;}
+ 
+ .paso7Inputs{
+   position: relative;
+   top:50px;
+   left: -15%;
+ }
  
  .ladoIzquierdoModal{
   display: grid;

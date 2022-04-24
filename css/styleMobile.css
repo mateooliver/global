@@ -578,13 +578,17 @@ color: #808080;
         margin: 3vw 0 3vw 9vw;
         color:#353C73;
         font-size: 10px; 
-        
- 
-        
+       
     }
     .ladoIzquierdoModal{
         display: unset;
     }
+    /* pagina 7 */
+    .paso7Inputs{
+        position: unset;
+        top:unset;
+        left: unset;
+      }
     /* pagina 8 */
     .genial{
         font-size: 20vw;
