@@ -186,7 +186,7 @@ $('#otrasOpciones').click(()=>{
     $("#masOpciones").show()
     $("#masOpciones").addClass("d-flex")
         $('#Opciones').prepend(()=>{
-           return `<input id="inputIngresos" class="inputPaso4 my-1" style=" padding-left: 2%; background: #F5F5F5;border: 2px solid #836ED8;box-sizing: border-box;box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);border-radius: 45px; " type="text" placeholder=" Categoría de producto"/>
+           return `<input id="inputIngresos" class="inputPaso4 my-1" style=" margin-top:50px; padding-left: 2%; background: #F5F5F5;border: 2px solid #836ED8;box-sizing: border-box;box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);border-radius: 45px; " type="text" placeholder=" Categoría de producto"/>
            <input id="inputIngresos" class="inputPaso4 my-1" style=" padding-left: 2%; background: #F5F5F5;border: 2px solid #836ED8;box-sizing: border-box;box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);border-radius: 45px; " type="text" placeholder=" Cantidad de Stock"/>
            <input id="inputIngresos" class="inputPaso4 my-1" style=" padding-left: 2%; background: #F5F5F5;border: 2px solid #836ED8;box-sizing: border-box;box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);border-radius: 45px; " type="text" placeholder=" Precio de compra"/>
            <input id="inputIngresos" class="inputPaso4 my-1" style=" padding-left: 2%; background: #F5F5F5;border: 2px solid #836ED8;box-sizing: border-box;box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);border-radius: 45px; " type="text" placeholder=" Precio de venta"/>
